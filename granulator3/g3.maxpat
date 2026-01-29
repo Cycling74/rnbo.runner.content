@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 770.0, 621.0, 1000.0, 780.0 ],
+        "rect": [ 769.0, 621.0, 1000.0, 780.0 ],
         "boxes": [
             {
                 "box": {
@@ -184,358 +184,8 @@
                     "outlettype": [ "signal", "signal", "list" ],
                     "patching_rect": [ 93.0, 270.0, 85.0, 22.0 ],
                     "rnboattrcache": {
-                        "PitchLFOToPitch": {
-                            "label": "PitchLFOToPitch",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionSlideToScan": {
-                            "label": "PositionSlideToScan",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env2Decay": {
-                            "label": "Env2Decay",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOVelocityToAmount": {
-                            "label": "LFOVelocityToAmount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFORandToRate": {
-                            "label": "LFORandToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchPressToSpread": {
-                            "label": "PitchPressToSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionLFOToScan": {
-                            "label": "PositionLFOToScan",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env2Attack": {
-                            "label": "Env2Attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainsChanceReverse": {
-                            "label": "GrainsChanceReverse",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOEnv2ToRate": {
-                            "label": "LFOEnv2ToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchEnv2ToPitch": {
-                            "label": "PitchEnv2ToPitch",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "PitchEnv2ToSpread": {
                             "label": "PitchEnv2ToSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env2Release": {
-                            "label": "Env2Release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionVelToPosition": {
-                            "label": "PositionVelToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOKeyToAmount": {
-                            "label": "LFOKeyToAmount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "AmpKeyToAmp": {
-                            "label": "AmpKeyToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionNoteSlideToPosition": {
-                            "label": "PositionNoteSlideToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchTranspose": {
-                            "label": "PitchTranspose",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOToAmp": {
-                            "label": "LFOToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "AmpLFOToAmp": {
-                            "label": "AmpLFOToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOStereo": {
-                            "label": "LFOStereo",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterWidth": {
-                            "label": "FilterWidth",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionKeyToPosition": {
-                            "label": "PositionKeyToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainNotePressToSize": {
-                            "label": "GrainNotePressToSize",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOBeatTime": {
-                            "label": "LFOBeatTime",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterVelocityToFrequency": {
-                            "label": "FilterVelocityToFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Variation": {
-                            "label": "Variation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionScanRate": {
-                            "label": "PositionScanRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainLFOToSize": {
-                            "label": "GrainLFOToSize",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOQuant": {
-                            "label": "LFOQuant",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterKeyToFrequency": {
-                            "label": "FilterKeyToFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "VariationPressToVariation": {
-                            "label": "VariationPressToVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainsDensity": {
-                            "label": "GrainsDensity",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainNoteSlideToSize": {
-                            "label": "GrainNoteSlideToSize",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainSize": {
-                            "label": "GrainSize",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterEnv2ToFrequency": {
-                            "label": "FilterEnv2ToFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env2Sustain": {
-                            "label": "Env2Sustain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionScanDistance": {
-                            "label": "PositionScanDistance",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainVelToSize": {
-                            "label": "GrainVelToSize",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchVelToSpread": {
-                            "label": "PitchVelToSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionEnv2ToPosition": {
-                            "label": "PositionEnv2ToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOEnv2ToAmount": {
-                            "label": "LFOEnv2ToAmount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "AmpPressToAmp": {
-                            "label": "AmpPressToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchSpread": {
-                            "label": "PitchSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionVariationToPosition": {
-                            "label": "PositionVariationToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "ShapeNoteSlideToShape": {
-                            "label": "ShapeNoteSlideToShape",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "ShapeEnv2ToShape": {
-                            "label": "ShapeEnv2ToShape",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "AmpSlideToAmp": {
-                            "label": "AmpSlideToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchLFOToSpread": {
-                            "label": "PitchLFOToSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionLFOToPosition": {
-                            "label": "PositionLFOToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env1Release": {
-                            "label": "Env1Release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "ShapeLFOToShape": {
-                            "label": "ShapeLFOToShape",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "AmpVelocityToAmp": {
-                            "label": "AmpVelocityToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterNotePitchBendToFrequency": {
-                            "label": "FilterNotePitchBendToFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionVelToScan": {
-                            "label": "PositionVelToScan",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Shape": {
-                            "label": "Shape",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "VariationVelToVariation": {
-                            "label": "VariationVelToVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "ShapeNotePressToShape": {
-                            "label": "ShapeNotePressToShape",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFONotePressToRate": {
-                            "label": "LFONotePressToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchSlideToSpread": {
-                            "label": "PitchSlideToSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterEnv1ToFrequency": {
-                            "label": "FilterEnv1ToFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainsPitchFlux": {
-                            "label": "GrainsPitchFlux",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOVelocityToRate": {
-                            "label": "LFOVelocityToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainKeyToSize": {
-                            "label": "GrainKeyToSize",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env2KeyToRates": {
-                            "label": "Env2KeyToRates",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "VariationKeyToVariation": {
-                            "label": "VariationKeyToVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Position": {
-                            "label": "Position",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchNotePressAmount": {
-                            "label": "PitchNotePressAmount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionNotePBToPosition": {
-                            "label": "PositionNotePBToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOAmount": {
-                            "label": "LFOAmount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainsVolumeVariation": {
-                            "label": "GrainsVolumeVariation",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -544,23 +194,18 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "PitchNotePBAmount": {
-                            "label": "PitchNotePBAmount",
+                        "GrainEnv2ToSize": {
+                            "label": "GrainEnv2ToSize",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "GrainVariationToGrain": {
-                            "label": "GrainVariationToGrain",
+                        "PitchSpread": {
+                            "label": "PitchSpread",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "PositionEnv2ToScan": {
-                            "label": "PositionEnv2ToScan",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterResonance": {
-                            "label": "FilterResonance",
+                        "PositionNoteSlideToPosition": {
+                            "label": "PositionNoteSlideToPosition",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -569,23 +214,13 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "PitchTimeMode": {
-                            "label": "PitchTimeMode",
+                        "PitchLFOToSpread": {
+                            "label": "PitchLFOToSpread",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "PitchKeyToPitch": {
-                            "label": "PitchKeyToPitch",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFORate": {
-                            "label": "LFORate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionGlobalVariation": {
-                            "label": "PositionGlobalVariation",
+                        "FilterWidth": {
+                            "label": "FilterWidth",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -594,23 +229,13 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "PitchRandomToPitch": {
-                            "label": "PitchRandomToPitch",
+                        "FilterNotePitchBendToFrequency": {
+                            "label": "FilterNotePitchBendToFrequency",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "FilterNotePressToFrequency": {
-                            "label": "FilterNotePressToFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "VariationSlideToVariation": {
-                            "label": "VariationSlideToVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env1Decay": {
-                            "label": "Env1Decay",
+                        "Variation": {
+                            "label": "Variation",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -619,8 +244,8 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "FilterLFOToFrequency": {
-                            "label": "FilterLFOToFrequency",
+                        "PitchSlideToSpread": {
+                            "label": "PitchSlideToSpread",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -629,23 +254,18 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "PositionSmooth": {
-                            "label": "PositionSmooth",
+                        "VariationPressToVariation": {
+                            "label": "VariationPressToVariation",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "Env1Attack": {
-                            "label": "Env1Attack",
+                        "LFORandToRate": {
+                            "label": "LFORandToRate",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "LFONoteSlideToRate": {
-                            "label": "LFONoteSlideToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterNoteSlideToFrequency": {
-                            "label": "FilterNoteSlideToFrequency",
+                        "Env2KeyToRates": {
+                            "label": "Env2KeyToRates",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -654,23 +274,18 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "PositionRandToPosition": {
-                            "label": "PositionRandToPosition",
+                        "Env2Sustain": {
+                            "label": "Env2Sustain",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "LFONotePressToAmount": {
-                            "label": "LFONotePressToAmount",
+                        "LFOEnv2ToRate": {
+                            "label": "LFOEnv2ToRate",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "LFONotePBToRate": {
-                            "label": "LFONotePBToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFORatio": {
-                            "label": "LFORatio",
+                        "LFOAmount": {
+                            "label": "LFOAmount",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -679,23 +294,18 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "FilterFrequency": {
-                            "label": "FilterFrequency",
+                        "LFOEnv2ToAmount": {
+                            "label": "LFOEnv2ToAmount",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "GrainEnv2ToSize": {
-                            "label": "GrainEnv2ToSize",
+                        "LFOKeyToAmount": {
+                            "label": "LFOKeyToAmount",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "AmpLevel": {
-                            "label": "AmpLevel",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionNotePressToPosition": {
-                            "label": "PositionNotePressToPosition",
+                        "PositionEnv2ToScan": {
+                            "label": "PositionEnv2ToScan",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -704,8 +314,398 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
+                        "ShapeEnv2ToShape": {
+                            "label": "ShapeEnv2ToShape",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "AmpLFOToAmp": {
+                            "label": "AmpLFOToAmp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFORate": {
+                            "label": "LFORate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "ShapeLFOToShape": {
+                            "label": "ShapeLFOToShape",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOBeatTime": {
+                            "label": "LFOBeatTime",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "VariationSlideToVariation": {
+                            "label": "VariationSlideToVariation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "ShapeNotePressToShape": {
+                            "label": "ShapeNotePressToShape",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOQuant": {
+                            "label": "LFOQuant",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env2Decay": {
+                            "label": "Env2Decay",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOVelocityToRate": {
+                            "label": "LFOVelocityToRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFONoteSlideToRate": {
+                            "label": "LFONoteSlideToRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainSize": {
+                            "label": "GrainSize",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env2Attack": {
+                            "label": "Env2Attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchNotePressAmount": {
+                            "label": "PitchNotePressAmount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFONotePBToRate": {
+                            "label": "LFONotePBToRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchVelToSpread": {
+                            "label": "PitchVelToSpread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env2Release": {
+                            "label": "Env2Release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchNotePBAmount": {
+                            "label": "PitchNotePBAmount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "AmpLevel": {
+                            "label": "AmpLevel",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionVariationToPosition": {
+                            "label": "PositionVariationToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchTranspose": {
+                            "label": "PitchTranspose",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchTimeMode": {
+                            "label": "PitchTimeMode",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionLFOToPosition": {
+                            "label": "PositionLFOToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionKeyToPosition": {
+                            "label": "PositionKeyToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchRandomToPitch": {
+                            "label": "PitchRandomToPitch",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionVelToScan": {
+                            "label": "PositionVelToScan",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionScanRate": {
+                            "label": "PositionScanRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterLFOToFrequency": {
+                            "label": "FilterLFOToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchLFOToPitch": {
+                            "label": "PitchLFOToPitch",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterEnv1ToFrequency": {
+                            "label": "FilterEnv1ToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionSmooth": {
+                            "label": "PositionSmooth",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainsDensity": {
+                            "label": "GrainsDensity",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchPressToSpread": {
+                            "label": "PitchPressToSpread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "VariationKeyToVariation": {
+                            "label": "VariationKeyToVariation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionRandToPosition": {
+                            "label": "PositionRandToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionScanDistance": {
+                            "label": "PositionScanDistance",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchEnv2ToPitch": {
+                            "label": "PitchEnv2ToPitch",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainsVolumeVariation": {
+                            "label": "GrainsVolumeVariation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterFrequency": {
+                            "label": "FilterFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "AmpPressToAmp": {
+                            "label": "AmpPressToAmp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "AmpKeyToAmp": {
+                            "label": "AmpKeyToAmp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterResonance": {
+                            "label": "FilterResonance",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
                         "Voices": {
                             "label": "Voices",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "AmpSlideToAmp": {
+                            "label": "AmpSlideToAmp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOStereo": {
+                            "label": "LFOStereo",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionGlobalVariation": {
+                            "label": "PositionGlobalVariation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "AmpVelocityToAmp": {
+                            "label": "AmpVelocityToAmp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterVelocityToFrequency": {
+                            "label": "FilterVelocityToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env1Decay": {
+                            "label": "Env1Decay",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFONotePressToRate": {
+                            "label": "LFONotePressToRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterKeyToFrequency": {
+                            "label": "FilterKeyToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOVelocityToAmount": {
+                            "label": "LFOVelocityToAmount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainKeyToSize": {
+                            "label": "GrainKeyToSize",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterNoteSlideToFrequency": {
+                            "label": "FilterNoteSlideToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterEnv2ToFrequency": {
+                            "label": "FilterEnv2ToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainsChanceReverse": {
+                            "label": "GrainsChanceReverse",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionNotePBToPosition": {
+                            "label": "PositionNotePBToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFORatio": {
+                            "label": "LFORatio",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionEnv2ToPosition": {
+                            "label": "PositionEnv2ToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionVelToPosition": {
+                            "label": "PositionVelToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Shape": {
+                            "label": "Shape",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainVariationToGrain": {
+                            "label": "GrainVariationToGrain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionNotePressToPosition": {
+                            "label": "PositionNotePressToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "ShapeNoteSlideToShape": {
+                            "label": "ShapeNoteSlideToShape",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOToAmp": {
+                            "label": "LFOToAmp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchKeyToPitch": {
+                            "label": "PitchKeyToPitch",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env1Release": {
+                            "label": "Env1Release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainNotePressToSize": {
+                            "label": "GrainNotePressToSize",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterNotePressToFrequency": {
+                            "label": "FilterNotePressToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "VariationVelToVariation": {
+                            "label": "VariationVelToVariation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainLFOToSize": {
+                            "label": "GrainLFOToSize",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionSlideToScan": {
+                            "label": "PositionSlideToScan",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainsPitchFlux": {
+                            "label": "GrainsPitchFlux",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env1Attack": {
+                            "label": "Env1Attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainNoteSlideToSize": {
+                            "label": "GrainNoteSlideToSize",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionLFOToScan": {
+                            "label": "PositionLFOToScan",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Position": {
+                            "label": "Position",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFONotePressToAmount": {
+                            "label": "LFONotePressToAmount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainVelToSize": {
+                            "label": "GrainVelToSize",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -2797,14 +2797,6 @@
         "parameters": {
             "obj-1": [ "rnbo~", "rnbo~", 0 ],
             "obj-3": [ "live.gain~", "live.gain~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0,
