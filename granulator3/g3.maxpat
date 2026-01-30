@@ -14,11 +14,12 @@
             {
                 "box": {
                     "id": "obj-11",
+                    "linecount": 2,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 544.0, 233.0, 150.0, 20.0 ],
-                    "text": "the cursor drawing"
+                    "patching_rect": [ 544.0, 233.0, 150.0, 33.0 ],
+                    "text": "the cursor and waveform drawing"
                 }
             },
             {
@@ -47,7 +48,7 @@
                         "classnamespace": "rnbo",
                         "rect": [ 219.0, 311.0, 1368.0, 1048.0 ],
                         "default_fontname": "Lato",
-                        "title": "g3-cursors",
+                        "title": "g3-draw",
                         "boxes": [
                             {
                                 "box": {
@@ -495,7 +496,7 @@
                                         "code": "// vim: set sw=2 tw=2 expandtab:\n@state draw = new display(\"waveform\", 128, 64);\n@state source = new data(\"captured\");\n\n@state captureframes = 0;\n@state dirty = 0;\n@state buf = 0;\n\nfunction in2(n: number) {\n  captureframes = n;\n  dirty = 1;\n}\n\nfunction in3(n: number) {\n  buf = n;\n  dirty = 1;\n}\n\nlet _dummy = in1;\n\nif (draw.ready() && dirty) {\n  draw.clear();\n  if (buf > 0) {\n    let sdim = min(dim(source), captureframes);\n    if (sdim > 2) {\n      let cols = draw.width();\n      let chunksize: Index = ceil(sdim / cols);\n      let rowbytes = draw.rowbytes();\n\n      let rowmid = draw.height() / 2;\n      let rowmid_1 = rowmid - 1;\n\n      for (let i = 0; i < cols; i++) {\n        let offset: Index = i * chunksize;\n        let m = 0.0;\n        for (let c = 0; c < chunksize; c++) {\n          let cindex = c + offset;\n          m = max(m, abs(peek(source, cindex, 0)[0]));\n          m = max(m, abs(peek(source, cindex, 1)[0]));\n        }\n\n        let rows: Index = clamp(rowmid_1 * m, 0, rowmid_1);\n        let bytebit = draw.pixelbytebit(0, i); //compute for first row but we offset below\n\n        //draw from the middle\n        let mask = 1 << bytebit[1];\n        for (let r = 0; r < rows; r++) {\n          //positive from center\n          draw.ormask(bytebit[0] + (rowmid_1 - r) * rowbytes, mask);\n          //negative from center\n          draw.ormask(bytebit[0] + (rowmid + r) * rowbytes, mask);\n        }\n      }\n    }\n  }\n  draw.markdirty();\n  dirty = 0;\n}\n",
                                         "nocache": 0
                                     },
-                                    "rnbo_serial": 15,
+                                    "rnbo_serial": 16,
                                     "rnbo_uniqueid": "codebox_obj-9",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -2210,7 +2211,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 544.0, 270.0, 134.0, 22.0 ],
+                    "patching_rect": [ 544.0, 270.0, 120.0, 22.0 ],
                     "rnboattrcache": {                    },
                     "rnboversion": "1.4.3-alpha.2",
                     "saved_attribute_attributes": {
@@ -2237,7 +2238,7 @@
                         "subtype": "Undefined",
                         "embed": 1,
                         "snapshot": {
-                            "__presetid": "g3-cursors"
+                            "__presetid": "g3-draw"
                         },
                         "snapshotlist": {
                             "current_snapshot": 0,
@@ -2247,25 +2248,25 @@
                                     "version": 2,
                                     "minorversion": 0,
                                     "name": "vu",
-                                    "origin": "g3-cursors",
+                                    "origin": "g3-draw",
                                     "type": "rnbo",
                                     "subtype": "",
                                     "embed": 0,
                                     "snapshot": {
-                                        "__presetid": "g3-cursors"
+                                        "__presetid": "g3-draw"
                                     },
                                     "fileref": {
                                         "name": "vu",
-                                        "filename": "vu_20251016_1.maxsnap",
+                                        "filename": "vu_20260129.maxsnap",
                                         "filepath": "~/Documents/Max 9/Snapshots",
                                         "filepos": -1,
-                                        "snapshotfileid": "aea9614c6f56d576e50b369f5c0e6f04"
+                                        "snapshotfileid": "5c523e47a495825a24970fed7091195c"
                                     }
                                 }
                             ]
                         }
                     },
-                    "text": "rnbo~ @title g3-cursors",
+                    "text": "rnbo~ @title g3-draw",
                     "varname": "rnbo~[6]"
                 }
             },
