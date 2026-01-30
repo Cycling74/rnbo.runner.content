@@ -1,4 +1,4 @@
-// vim: set sw=2 tw=2 expandtab:
+// vim: set sw=2 ts=2 expandtab:
 // out1 indicates that a new capature was made and we should switch to it
 // out2 indicates that the CapturedNoResize buffer was updated and should be redrawn
 @param captureseconds = 1;
@@ -9,7 +9,7 @@
 
 //when a preset is replayed, we need to copy Captured -> to CapturedNoResize
 function in2(frames: number) {
-  let i = 0;
+  let i: Index = 0;
   for (; i < frames; i++) {
     poke(capturenoresizebuf, peek(capturebuf, i, 0)[0], i, 0, 0);
     poke(capturenoresizebuf, peek(capturebuf, i, 1)[0], i, 1, 0);
@@ -18,17 +18,20 @@ function in2(frames: number) {
 }
 
 let lastcaptureframe = in1;
-let frames = captureseconds * samplerate();
-let bufframes = 8 * samplerate(); // can we get this from the data object?
+let frames: Index = captureseconds * samplerate();
+let bufframes: Index = dim(livebuf);
 
-let  start = lastcaptureframe - frames;
+//the button on the move makes a click sound, we don't want to include that so we move back in time a little
+
+let offset: Index = mstosamps(50);
+let start: Index = lastcaptureframe - frames - offset;
 if (start < 0) {
   start = start + bufframes;
 }
 
 //TODO chunk??
   
-let i = 0;
+let i: Index = 0;
 for (; i < frames; i++) {
   //poke(buffer, value, sampleIndex, channel, overdub)
   //peek(buffer, sampleIndex, channel, channelOffset): [out1, out2]
