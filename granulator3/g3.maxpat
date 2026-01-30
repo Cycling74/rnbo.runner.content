@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 769.0, 621.0, 1000.0, 780.0 ],
+        "rect": [ 554.0, 631.0, 1000.0, 780.0 ],
         "boxes": [
             {
                 "box": {
@@ -45,10 +45,1318 @@
                             "modernui": 1
                         },
                         "classnamespace": "rnbo",
-                        "rect": [ 708.0, 701.0, 938.0, 1004.0 ],
+                        "rect": [ 219.0, 311.0, 1368.0, 1048.0 ],
                         "default_fontname": "Lato",
                         "title": "g3-cursors",
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-17",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 1094.0, 237.0, 49.0, 23.0 ],
+                                    "rnbo_classname": "pack",
+                                    "rnbo_extra_attributes": {
+                                        "list": "",
+                                        "length": 0.0
+                                    },
+                                    "rnbo_serial": 2,
+                                    "rnbo_uniqueid": "pack_obj-17",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "out": {
+                                                "attrOrProp": 1,
+                                                "digest": "out",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "list"
+                                            },
+                                            "in1": {
+                                                "attrOrProp": 1,
+                                                "digest": "number to be list element 1",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "number"
+                                            },
+                                            "in2": {
+                                                "attrOrProp": 1,
+                                                "digest": "number to be list element 2",
+                                                "defaultarg": 2,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "number"
+                                            },
+                                            "length": {
+                                                "attrOrProp": 2,
+                                                "digest": "how many things to pack",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number"
+                                            },
+                                            "list": {
+                                                "attrOrProp": 2,
+                                                "digest": "the list to initialize the {@objectname} object with",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "list"
+                                            }
+                                        },
+                                        "inputs": [
+                                            {
+                                                "name": "in1",
+                                                "type": [ "number", "bang" ],
+                                                "digest": "number to be list element 1",
+                                                "defaultarg": 1,
+                                                "hot": 1,
+                                                "docked": 0
+                                            },
+                                            {
+                                                "name": "in2",
+                                                "type": "number",
+                                                "digest": "number to be list element 2",
+                                                "defaultarg": 2,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "outputs": [
+                                            {
+                                                "name": "out",
+                                                "type": "list",
+                                                "digest": "out",
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "helpname": "pack",
+                                        "aliasOf": "pack",
+                                        "classname": "pack",
+                                        "operator": 0,
+                                        "versionId": 1331432417,
+                                        "changesPatcherIO": 0
+                                    },
+                                    "text": "pack i 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-16",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 1191.0, 237.0, 49.0, 23.0 ],
+                                    "rnbo_classname": "pack",
+                                    "rnbo_extra_attributes": {
+                                        "list": "",
+                                        "length": 0.0
+                                    },
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "pack_obj-16",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "out": {
+                                                "attrOrProp": 1,
+                                                "digest": "out",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "list"
+                                            },
+                                            "in1": {
+                                                "attrOrProp": 1,
+                                                "digest": "number to be list element 1",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "number"
+                                            },
+                                            "in2": {
+                                                "attrOrProp": 1,
+                                                "digest": "number to be list element 2",
+                                                "defaultarg": 2,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "number"
+                                            },
+                                            "length": {
+                                                "attrOrProp": 2,
+                                                "digest": "how many things to pack",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number"
+                                            },
+                                            "list": {
+                                                "attrOrProp": 2,
+                                                "digest": "the list to initialize the {@objectname} object with",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "list"
+                                            }
+                                        },
+                                        "inputs": [
+                                            {
+                                                "name": "in1",
+                                                "type": [ "number", "bang" ],
+                                                "digest": "number to be list element 1",
+                                                "defaultarg": 1,
+                                                "hot": 1,
+                                                "docked": 0
+                                            },
+                                            {
+                                                "name": "in2",
+                                                "type": "number",
+                                                "digest": "number to be list element 2",
+                                                "defaultarg": 2,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "outputs": [
+                                            {
+                                                "name": "out",
+                                                "type": "list",
+                                                "digest": "out",
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "helpname": "pack",
+                                        "aliasOf": "pack",
+                                        "classname": "pack",
+                                        "operator": 0,
+                                        "versionId": 1331432417,
+                                        "changesPatcherIO": 0
+                                    },
+                                    "text": "pack i 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-15",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 1094.0, 291.0, 62.0, 23.0 ],
+                                    "rnbo_classname": "prepend",
+                                    "rnbo_extra_attributes": {
+                                        "hot": 0
+                                    },
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "prepend_obj-15",
+                                    "text": "prepend 0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-14",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 1191.0, 206.0, 20.0, 23.0 ],
+                                    "rnbo_classname": "!",
+                                    "rnbo_extra_attributes": {
+                                        "hot": 0
+                                    },
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "!_obj-14",
+                                    "text": "!"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-13",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "", "" ],
+                                    "patching_rect": [ 1094.0, 172.0, 212.0, 23.0 ],
+                                    "rnbo_classname": "t",
+                                    "rnbo_extra_attributes": {
+                                        "triggers": ""
+                                    },
+                                    "rnbo_serial": 3,
+                                    "rnbo_uniqueid": "t_obj-13",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "out1": {
+                                                "attrOrProp": 1,
+                                                "digest": "Output order 3 (number).",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "number"
+                                            },
+                                            "out2": {
+                                                "attrOrProp": 1,
+                                                "digest": "Output order 2 (number).",
+                                                "defaultarg": 2,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "number"
+                                            },
+                                            "out3": {
+                                                "attrOrProp": 1,
+                                                "digest": "Output order 1 (number).",
+                                                "defaultarg": 3,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "number"
+                                            },
+                                            "triggers": {
+                                                "attrOrProp": 2,
+                                                "digest": "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "list"
+                                            }
+                                        },
+                                        "inputs": [
+                                            {
+                                                "name": "input",
+                                                "type": [ "bang", "number", "list" ],
+                                                "digest": "input to distribute",
+                                                "hot": 1,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "outputs": [
+                                            {
+                                                "name": "out1",
+                                                "type": "number",
+                                                "digest": "Output order 3 (number).",
+                                                "defaultarg": 1,
+                                                "docked": 0
+                                            },
+                                            {
+                                                "name": "out2",
+                                                "type": "number",
+                                                "digest": "Output order 2 (number).",
+                                                "defaultarg": 2,
+                                                "docked": 0
+                                            },
+                                            {
+                                                "name": "out3",
+                                                "type": "number",
+                                                "digest": "Output order 1 (number).",
+                                                "defaultarg": 3,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "helpname": "trigger",
+                                        "aliasOf": "trigger",
+                                        "classname": "t",
+                                        "operator": 0,
+                                        "versionId": 1624904035,
+                                        "changesPatcherIO": 0
+                                    },
+                                    "text": "t i i i"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-11",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 1094.0, 320.0, 212.0, 23.0 ],
+                                    "rnbo_classname": "outport",
+                                    "rnbo_extra_attributes": {
+                                        "meta": ""
+                                    },
+                                    "rnbo_serial": 2,
+                                    "rnbo_uniqueid": "outport_obj-11",
+                                    "text": "outport /rnboctl/userview/layer/hide"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-12",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 1094.0, 131.0, 99.0, 23.0 ],
+                                    "rnbo_classname": "inport",
+                                    "rnbo_extra_attributes": {
+                                        "meta": ""
+                                    },
+                                    "rnbo_serial": 3,
+                                    "rnbo_uniqueid": "inport_obj-12",
+                                    "text": "inport /g3/buffer"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-10",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 1016.0, 349.0, 142.0, 23.0 ],
+                                    "rnbo_classname": "inport",
+                                    "rnbo_extra_attributes": {
+                                        "meta": ""
+                                    },
+                                    "rnbo_serial": 2,
+                                    "rnbo_uniqueid": "inport_obj-10",
+                                    "text": "inport /g3/captureframes"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "code": "// vim: set sw=2 tw=2 expandtab:\n@state draw = new display(\"waveform\", 128, 64);\n@state source = new data(\"captured\");\n\n@state captureframes = 0;\n@state dirty = 0;\n@state buf = 0;\n\nfunction in2(n: number) {\n  captureframes = n;\n  dirty = 1;\n}\n\nfunction in3(n: number) {\n  buf = n;\n  dirty = 1;\n}\n\nlet _dummy = in1;\n\nif (draw.ready() && dirty) {\n  draw.clear();\n  if (buf > 0) {\n    let sdim = min(dim(source), captureframes);\n    if (sdim > 2) {\n      let cols = draw.width();\n      let chunksize: Index = ceil(sdim / cols);\n      let rowbytes = draw.rowbytes();\n\n      let rowmid = draw.height() / 2;\n      let rowmid_1 = rowmid - 1;\n\n      for (let i = 0; i < cols; i++) {\n        let offset: Index = i * chunksize;\n        let m = 0.0;\n        for (let c = 0; c < chunksize; c++) {\n          let cindex = c + offset;\n          m = max(m, abs(peek(source, cindex, 0)[0]));\n          m = max(m, abs(peek(source, cindex, 1)[0]));\n        }\n\n        let rows: Index = clamp(rowmid_1 * m, 0, rowmid_1);\n        let bytebit = draw.pixelbytebit(0, i); //compute for first row but we offset below\n\n        //draw from the middle\n        let mask = 1 << bytebit[1];\n        for (let r = 0; r < rows; r++) {\n          //positive from center\n          draw.ormask(bytebit[0] + (rowmid_1 - r) * rowbytes, mask);\n          //negative from center\n          draw.ormask(bytebit[0] + (rowmid + r) * rowbytes, mask);\n        }\n      }\n    }\n  }\n  draw.markdirty();\n  dirty = 0;\n}\n",
+                                    "fontface": 0,
+                                    "fontname": "<Monospaced>",
+                                    "fontsize": 12.0,
+                                    "id": "obj-9",
+                                    "maxclass": "codebox",
+                                    "numinlets": 3,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 745.0, 386.0, 561.0, 570.0 ],
+                                    "rnbo_classname": "codebox",
+                                    "rnbo_extra_attributes": {
+                                        "safemath": 1,
+                                        "hot": 0,
+                                        "code": "// vim: set sw=2 tw=2 expandtab:\n@state draw = new display(\"waveform\", 128, 64);\n@state source = new data(\"captured\");\n\n@state captureframes = 0;\n@state dirty = 0;\n@state buf = 0;\n\nfunction in2(n: number) {\n  captureframes = n;\n  dirty = 1;\n}\n\nfunction in3(n: number) {\n  buf = n;\n  dirty = 1;\n}\n\nlet _dummy = in1;\n\nif (draw.ready() && dirty) {\n  draw.clear();\n  if (buf > 0) {\n    let sdim = min(dim(source), captureframes);\n    if (sdim > 2) {\n      let cols = draw.width();\n      let chunksize: Index = ceil(sdim / cols);\n      let rowbytes = draw.rowbytes();\n\n      let rowmid = draw.height() / 2;\n      let rowmid_1 = rowmid - 1;\n\n      for (let i = 0; i < cols; i++) {\n        let offset: Index = i * chunksize;\n        let m = 0.0;\n        for (let c = 0; c < chunksize; c++) {\n          let cindex = c + offset;\n          m = max(m, abs(peek(source, cindex, 0)[0]));\n          m = max(m, abs(peek(source, cindex, 1)[0]));\n        }\n\n        let rows: Index = clamp(rowmid_1 * m, 0, rowmid_1);\n        let bytebit = draw.pixelbytebit(0, i); //compute for first row but we offset below\n\n        //draw from the middle\n        let mask = 1 << bytebit[1];\n        for (let r = 0; r < rows; r++) {\n          //positive from center\n          draw.ormask(bytebit[0] + (rowmid_1 - r) * rowbytes, mask);\n          //negative from center\n          draw.ormask(bytebit[0] + (rowmid + r) * rowbytes, mask);\n        }\n      }\n    }\n  }\n  draw.markdirty();\n  dirty = 0;\n}\n",
+                                        "nocache": 0
+                                    },
+                                    "rnbo_serial": 15,
+                                    "rnbo_uniqueid": "codebox_obj-9",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "reset": {
+                                                "attrOrProp": 1,
+                                                "digest": "Reset all state and params to initial values",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bang"
+                                            },
+                                            "in1": {
+                                                "attrOrProp": 1,
+                                                "digest": "in1",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "number"
+                                            },
+                                            "in2": {
+                                                "attrOrProp": 1,
+                                                "digest": "in2",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "number"
+                                            },
+                                            "in3": {
+                                                "attrOrProp": 1,
+                                                "digest": "in3",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "number"
+                                            },
+                                            "expr": {
+                                                "attrOrProp": 2,
+                                                "digest": "expr",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol",
+                                                "doNotShowInMaxInspector": 1
+                                            },
+                                            "hot": {
+                                                "attrOrProp": 2,
+                                                "digest": "Trigger computation on all inlets.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "defaultValue": "false"
+                                            },
+                                            "safemath": {
+                                                "attrOrProp": 2,
+                                                "digest": "Use safe math expressions (e.g.: division by 0 will not crash).",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "defaultValue": "true"
+                                            },
+                                            "nocache": {
+                                                "attrOrProp": 2,
+                                                "digest": "Do not use parsing cache. This is only useful with very very big code sizes. Code generation will then take a looooong time.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "defaultValue": "false"
+                                            }
+                                        },
+                                        "inputs": [
+                                            {
+                                                "name": "in1",
+                                                "type": "number",
+                                                "digest": "in1",
+                                                "hot": 1,
+                                                "docked": 0
+                                            },
+                                            {
+                                                "name": "in2",
+                                                "type": "number",
+                                                "digest": "in2",
+                                                "docked": 0
+                                            },
+                                            {
+                                                "name": "in3",
+                                                "type": "number",
+                                                "digest": "in3",
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "outputs": [],
+                                        "helpname": "codebox",
+                                        "aliasOf": "expr",
+                                        "classname": "codebox",
+                                        "operator": 0,
+                                        "versionId": 835263063,
+                                        "changesPatcherIO": 0
+                                    }
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-8",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "", "" ],
+                                    "patching_rect": [ 341.0, 81.0, 611.0, 23.0 ],
+                                    "rnbo_classname": "data",
+                                    "rnbo_extra_attributes": {
+                                        "fill": "",
+                                        "file": "",
+                                        "preset": 0,
+                                        "samplerate": 0.0
+                                    },
+                                    "rnbo_serial": 6,
+                                    "rnbo_uniqueid": "data_obj-8",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "info": {
+                                                "attrOrProp": 1,
+                                                "digest": "Bang to report buffer information.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 0,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "bang"
+                                            },
+                                            "sizeout": {
+                                                "attrOrProp": 1,
+                                                "digest": "Size in Samples",
+                                                "defaultarg": 2,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 0,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "chanout": {
+                                                "attrOrProp": 1,
+                                                "digest": "Number of Channels",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "srout": {
+                                                "attrOrProp": 1,
+                                                "digest": "Sample rate",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "size": {
+                                                "attrOrProp": 1,
+                                                "digest": "Size in Samples. Take care when setting, allocation might block audio processing.",
+                                                "defaultarg": 2,
+                                                "isalias": 0,
+                                                "aliases": [ "samples" ],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "samples": {
+                                                "attrOrProp": 1,
+                                                "digest": "Size in Samples. Take care when setting, allocation might block audio processing.",
+                                                "defaultarg": 2,
+                                                "isalias": 1,
+                                                "aliasOf": "size",
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "sizems": {
+                                                "attrOrProp": 1,
+                                                "digest": "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
+                                                "isalias": 0,
+                                                "aliases": [ "ms" ],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "ms": {
+                                                "attrOrProp": 1,
+                                                "digest": "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
+                                                "isalias": 1,
+                                                "aliasOf": "sizems",
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "clear": {
+                                                "attrOrProp": 1,
+                                                "digest": "Clear the contents of the buffer",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bang"
+                                            },
+                                            "normalize": {
+                                                "attrOrProp": 1,
+                                                "digest": "Find Maximum and normalize to the value given.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0.995"
+                                            },
+                                            "channels": {
+                                                "attrOrProp": 1,
+                                                "digest": "Change channel count. Take care when setting, allocation might block audio processing.",
+                                                "defaultarg": 3,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "1"
+                                            },
+                                            "name": {
+                                                "attrOrProp": 2,
+                                                "digest": "Name of the data buffer",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol",
+                                                "mandatory": 1
+                                            },
+                                            "file": {
+                                                "attrOrProp": 2,
+                                                "digest": "File name/path or URL to load into buffer.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "type": {
+                                                "attrOrProp": 2,
+                                                "digest": "Type of Data (float32, float64)",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "samplerate": {
+                                                "attrOrProp": 2,
+                                                "digest": "Sample rate",
+                                                "defaultarg": 4,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "fill": {
+                                                "attrOrProp": 2,
+                                                "digest": "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "external": {
+                                                "attrOrProp": 2,
+                                                "digest": "Await data from the outside world.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "doNotShowInMaxInspector": 1
+                                            },
+                                            "preset": {
+                                                "attrOrProp": 2,
+                                                "digest": "Add this value to the preset.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "defaultValue": "false",
+                                                "label": "Include In Preset",
+                                                "category": "Preset"
+                                            },
+                                            "meta": {
+                                                "attrOrProp": 2,
+                                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol",
+                                                "defaultValue": "",
+                                                "label": "Metadata"
+                                            }
+                                        },
+                                        "inputs": [
+                                            {
+                                                "name": "info",
+                                                "type": "bang",
+                                                "digest": "Bang to report buffer information.",
+                                                "hot": 1,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "outputs": [
+                                            {
+                                                "name": "sizeout",
+                                                "type": "number",
+                                                "digest": "Size in Samples",
+                                                "defaultarg": 2,
+                                                "docked": 0
+                                            },
+                                            {
+                                                "name": "chanout",
+                                                "type": "number",
+                                                "digest": "Number of Channels",
+                                                "docked": 0
+                                            },
+                                            {
+                                                "name": "srout",
+                                                "type": "number",
+                                                "digest": "Sample rate",
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "helpname": "buffer~",
+                                        "aliasOf": "data",
+                                        "classname": "data",
+                                        "operator": 0,
+                                        "versionId": 405570163,
+                                        "changesPatcherIO": 0
+                                    },
+                                    "text": "data waveform @type UInt8 @external true @size 1056 @meta system:true\\,view:0\\,z:1\\,hidden:true\\,viewhidden:true"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-7",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 37.0, 61.0, 32.0, 23.0 ],
+                                    "rnbo_classname": "t",
+                                    "rnbo_extra_attributes": {
+                                        "triggers": ""
+                                    },
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "t_obj-7",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "out1": {
+                                                "attrOrProp": 1,
+                                                "digest": "Output order 2 (bang).",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "bang"
+                                            },
+                                            "out2": {
+                                                "attrOrProp": 1,
+                                                "digest": "Output order 1 (bang).",
+                                                "defaultarg": 2,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "bang"
+                                            },
+                                            "triggers": {
+                                                "attrOrProp": 2,
+                                                "digest": "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "list"
+                                            }
+                                        },
+                                        "inputs": [
+                                            {
+                                                "name": "input",
+                                                "type": [ "bang", "number", "list" ],
+                                                "digest": "input to distribute",
+                                                "hot": 1,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "outputs": [
+                                            {
+                                                "name": "out1",
+                                                "type": "bang",
+                                                "digest": "Output order 2 (bang).",
+                                                "defaultarg": 1,
+                                                "docked": 0
+                                            },
+                                            {
+                                                "name": "out2",
+                                                "type": "bang",
+                                                "digest": "Output order 1 (bang).",
+                                                "defaultarg": 2,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "helpname": "trigger",
+                                        "aliasOf": "trigger",
+                                        "classname": "t",
+                                        "operator": 0,
+                                        "versionId": 1624904035,
+                                        "changesPatcherIO": 0
+                                    },
+                                    "text": "t b b"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-6",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "", "" ],
+                                    "patching_rect": [ 341.0, 111.0, 363.0, 23.0 ],
+                                    "rnbo_classname": "data",
+                                    "rnbo_extra_attributes": {
+                                        "fill": "",
+                                        "file": "",
+                                        "preset": 0,
+                                        "samplerate": 0.0
+                                    },
+                                    "rnbo_serial": 2,
+                                    "rnbo_uniqueid": "data_obj-6",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "info": {
+                                                "attrOrProp": 1,
+                                                "digest": "Bang to report buffer information.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 0,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "bang"
+                                            },
+                                            "sizeout": {
+                                                "attrOrProp": 1,
+                                                "digest": "Size in Samples",
+                                                "defaultarg": 2,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 0,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "chanout": {
+                                                "attrOrProp": 1,
+                                                "digest": "Number of Channels",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "srout": {
+                                                "attrOrProp": 1,
+                                                "digest": "Sample rate",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "size": {
+                                                "attrOrProp": 1,
+                                                "digest": "Size in Samples. Take care when setting, allocation might block audio processing.",
+                                                "defaultarg": 2,
+                                                "isalias": 0,
+                                                "aliases": [ "samples" ],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "samples": {
+                                                "attrOrProp": 1,
+                                                "digest": "Size in Samples. Take care when setting, allocation might block audio processing.",
+                                                "defaultarg": 2,
+                                                "isalias": 1,
+                                                "aliasOf": "size",
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "sizems": {
+                                                "attrOrProp": 1,
+                                                "digest": "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
+                                                "isalias": 0,
+                                                "aliases": [ "ms" ],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "ms": {
+                                                "attrOrProp": 1,
+                                                "digest": "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
+                                                "isalias": 1,
+                                                "aliasOf": "sizems",
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "clear": {
+                                                "attrOrProp": 1,
+                                                "digest": "Clear the contents of the buffer",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bang"
+                                            },
+                                            "normalize": {
+                                                "attrOrProp": 1,
+                                                "digest": "Find Maximum and normalize to the value given.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0.995"
+                                            },
+                                            "channels": {
+                                                "attrOrProp": 1,
+                                                "digest": "Change channel count. Take care when setting, allocation might block audio processing.",
+                                                "defaultarg": 3,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "1"
+                                            },
+                                            "name": {
+                                                "attrOrProp": 2,
+                                                "digest": "Name of the data buffer",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol",
+                                                "mandatory": 1
+                                            },
+                                            "file": {
+                                                "attrOrProp": 2,
+                                                "digest": "File name/path or URL to load into buffer.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "type": {
+                                                "attrOrProp": 2,
+                                                "digest": "Type of Data (float32, float64)",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "samplerate": {
+                                                "attrOrProp": 2,
+                                                "digest": "Sample rate",
+                                                "defaultarg": 4,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "defaultValue": "0"
+                                            },
+                                            "fill": {
+                                                "attrOrProp": 2,
+                                                "digest": "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "external": {
+                                                "attrOrProp": 2,
+                                                "digest": "Await data from the outside world.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "doNotShowInMaxInspector": 1
+                                            },
+                                            "preset": {
+                                                "attrOrProp": 2,
+                                                "digest": "Add this value to the preset.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "defaultValue": "false",
+                                                "label": "Include In Preset",
+                                                "category": "Preset"
+                                            },
+                                            "meta": {
+                                                "attrOrProp": 2,
+                                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol",
+                                                "defaultValue": "",
+                                                "label": "Metadata"
+                                            }
+                                        },
+                                        "inputs": [
+                                            {
+                                                "name": "info",
+                                                "type": "bang",
+                                                "digest": "Bang to report buffer information.",
+                                                "hot": 1,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "outputs": [
+                                            {
+                                                "name": "sizeout",
+                                                "type": "number",
+                                                "digest": "Size in Samples",
+                                                "defaultarg": 2,
+                                                "docked": 0
+                                            },
+                                            {
+                                                "name": "chanout",
+                                                "type": "number",
+                                                "digest": "Number of Channels",
+                                                "docked": 0
+                                            },
+                                            {
+                                                "name": "srout",
+                                                "type": "number",
+                                                "digest": "Sample rate",
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "helpname": "buffer~",
+                                        "aliasOf": "data",
+                                        "classname": "data",
+                                        "operator": 0,
+                                        "versionId": 405570163,
+                                        "changesPatcherIO": 0
+                                    },
+                                    "text": "data captured @type Float32 @meta hidden:true\\,observe:'captured'"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-4",
@@ -59,12 +1367,12 @@
                                     "patching_rect": [ 341.0, 44.0, 347.0, 23.0 ],
                                     "rnbo_classname": "data",
                                     "rnbo_extra_attributes": {
-                                        "preset": 0,
                                         "fill": "",
-                                        "samplerate": 0.0,
-                                        "file": ""
+                                        "file": "",
+                                        "preset": 0,
+                                        "samplerate": 0.0
                                     },
-                                    "rnbo_serial": 8,
+                                    "rnbo_serial": 3,
                                     "rnbo_uniqueid": "data_obj-4",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -401,13 +1709,13 @@
                                     "maxclass": "codebox",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 37.0, 79.0, 694.0, 877.0 ],
+                                    "patching_rect": [ 37.0, 386.0, 691.0, 570.0 ],
                                     "rnbo_classname": "codebox",
                                     "rnbo_extra_attributes": {
-                                        "nocache": 0,
+                                        "safemath": 0,
                                         "hot": 0,
                                         "code": "@state draw = new display(\"draw\", 128, 64);\n@state source = new data(\"cursors\");\n\nlet _dummy = in1;\n\nif (draw.ready()) {\n  let cdim = dim(source);\n  if (cdim >= 64) {\n    draw.clear();\n\n    let cols_1 = draw.width() - 1;\n    let rows = draw.height(); //could make dynamic based on amp\n    let rowbytes = draw.rowbytes();\n\n    for (let voice = 0; voice < 16; voice++) { //XXX is 16 correct?\n      let index: Index = voice * 2;\n\n      let amp = source[index];\n      if (amp <= 0.01) {\n        continue;\n      }\n      let pos = source[index + 32];\n\n      let column = clamp(pos * cols_1, 0, cols_1);\n      let bytebit = draw.pixelbytebit(0, column); //compute for first row but we offset below\n\n      let mask = 1 << bytebit[1];\n      for (let r = 0; r < rows; r++) {\n        draw.ormask(bytebit[0] + r * rowbytes, mask);\n      }\n    }\n  }\n  draw.markdirty();\n}\n",
-                                        "safemath": 0
+                                        "nocache": 0
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "codebox_obj-2",
@@ -521,12 +1829,12 @@
                                     "patching_rect": [ 341.0, 15.0, 573.0, 23.0 ],
                                     "rnbo_classname": "data",
                                     "rnbo_extra_attributes": {
-                                        "preset": 0,
                                         "fill": "",
-                                        "samplerate": 0.0,
-                                        "file": ""
+                                        "file": "",
+                                        "preset": 0,
+                                        "samplerate": 0.0
                                     },
-                                    "rnbo_serial": 5,
+                                    "rnbo_serial": 4,
                                     "rnbo_uniqueid": "data_obj-1",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -830,8 +2138,74 @@
                         "lines": [
                             {
                                 "patchline": {
-                                    "destination": [ "obj-2", 0 ],
+                                    "destination": [ "obj-9", 1 ],
+                                    "source": [ "obj-10", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-13", 0 ],
+                                    "source": [ "obj-12", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-14", 0 ],
+                                    "source": [ "obj-13", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-17", 0 ],
+                                    "source": [ "obj-13", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-9", 2 ],
+                                    "source": [ "obj-13", 2 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-16", 0 ],
+                                    "source": [ "obj-14", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-11", 0 ],
+                                    "source": [ "obj-15", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-15", 0 ],
+                                    "source": [ "obj-16", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-15", 0 ],
+                                    "source": [ "obj-17", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-7", 0 ],
                                     "source": [ "obj-3", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-7", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-9", 0 ],
+                                    "source": [ "obj-7", 1 ]
                                 }
                             }
                         ]
@@ -1068,393 +2442,8 @@
                     "outlettype": [ "signal", "signal", "list" ],
                     "patching_rect": [ 93.0, 270.0, 85.0, 22.0 ],
                     "rnboattrcache": {
-                        "PitchEnv2ToSpread": {
-                            "label": "PitchEnv2ToSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFONoteSlideToAmount": {
-                            "label": "LFONoteSlideToAmount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainEnv2ToSize": {
-                            "label": "GrainEnv2ToSize",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchSpread": {
-                            "label": "PitchSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionNoteSlideToPosition": {
-                            "label": "PositionNoteSlideToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env1Sustain": {
-                            "label": "Env1Sustain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchLFOToSpread": {
-                            "label": "PitchLFOToSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterWidth": {
-                            "label": "FilterWidth",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "MonoSlewTime": {
-                            "label": "MonoSlewTime",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "FilterNotePitchBendToFrequency": {
                             "label": "FilterNotePitchBendToFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Variation": {
-                            "label": "Variation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOKeyToRate": {
-                            "label": "LFOKeyToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchSlideToSpread": {
-                            "label": "PitchSlideToSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "VariationEnv2ToVariation": {
-                            "label": "VariationEnv2ToVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "VariationPressToVariation": {
-                            "label": "VariationPressToVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFORandToRate": {
-                            "label": "LFORandToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env2KeyToRates": {
-                            "label": "Env2KeyToRates",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "VariationLFOToVariation": {
-                            "label": "VariationLFOToVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env2Sustain": {
-                            "label": "Env2Sustain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOEnv2ToRate": {
-                            "label": "LFOEnv2ToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOAmount": {
-                            "label": "LFOAmount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchTune": {
-                            "label": "PitchTune",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOEnv2ToAmount": {
-                            "label": "LFOEnv2ToAmount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOKeyToAmount": {
-                            "label": "LFOKeyToAmount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionEnv2ToScan": {
-                            "label": "PositionEnv2ToScan",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env1KeyToRates": {
-                            "label": "Env1KeyToRates",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "ShapeEnv2ToShape": {
-                            "label": "ShapeEnv2ToShape",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "AmpLFOToAmp": {
-                            "label": "AmpLFOToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFORate": {
-                            "label": "LFORate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "ShapeLFOToShape": {
-                            "label": "ShapeLFOToShape",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOBeatTime": {
-                            "label": "LFOBeatTime",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "VariationSlideToVariation": {
-                            "label": "VariationSlideToVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "ShapeNotePressToShape": {
-                            "label": "ShapeNotePressToShape",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOQuant": {
-                            "label": "LFOQuant",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env2Decay": {
-                            "label": "Env2Decay",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOVelocityToRate": {
-                            "label": "LFOVelocityToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFONoteSlideToRate": {
-                            "label": "LFONoteSlideToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainSize": {
-                            "label": "GrainSize",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env2Attack": {
-                            "label": "Env2Attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchNotePressAmount": {
-                            "label": "PitchNotePressAmount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFONotePBToRate": {
-                            "label": "LFONotePBToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchVelToSpread": {
-                            "label": "PitchVelToSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env2Release": {
-                            "label": "Env2Release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchNotePBAmount": {
-                            "label": "PitchNotePBAmount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "AmpLevel": {
-                            "label": "AmpLevel",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionVariationToPosition": {
-                            "label": "PositionVariationToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchTranspose": {
-                            "label": "PitchTranspose",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchTimeMode": {
-                            "label": "PitchTimeMode",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionLFOToPosition": {
-                            "label": "PositionLFOToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionKeyToPosition": {
-                            "label": "PositionKeyToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchRandomToPitch": {
-                            "label": "PitchRandomToPitch",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionVelToScan": {
-                            "label": "PositionVelToScan",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionScanRate": {
-                            "label": "PositionScanRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterLFOToFrequency": {
-                            "label": "FilterLFOToFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchLFOToPitch": {
-                            "label": "PitchLFOToPitch",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterEnv1ToFrequency": {
-                            "label": "FilterEnv1ToFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionSmooth": {
-                            "label": "PositionSmooth",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainsDensity": {
-                            "label": "GrainsDensity",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchPressToSpread": {
-                            "label": "PitchPressToSpread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "VariationKeyToVariation": {
-                            "label": "VariationKeyToVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionRandToPosition": {
-                            "label": "PositionRandToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionScanDistance": {
-                            "label": "PositionScanDistance",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchEnv2ToPitch": {
-                            "label": "PitchEnv2ToPitch",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainsVolumeVariation": {
-                            "label": "GrainsVolumeVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterFrequency": {
-                            "label": "FilterFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "AmpPressToAmp": {
-                            "label": "AmpPressToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "AmpKeyToAmp": {
-                            "label": "AmpKeyToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterResonance": {
-                            "label": "FilterResonance",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Voices": {
-                            "label": "Voices",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "AmpSlideToAmp": {
-                            "label": "AmpSlideToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOStereo": {
-                            "label": "LFOStereo",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionGlobalVariation": {
-                            "label": "PositionGlobalVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "AmpVelocityToAmp": {
-                            "label": "AmpVelocityToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterVelocityToFrequency": {
-                            "label": "FilterVelocityToFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env1Decay": {
-                            "label": "Env1Decay",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFONotePressToRate": {
-                            "label": "LFONotePressToRate",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "FilterKeyToFrequency": {
-                            "label": "FilterKeyToFrequency",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "LFOVelocityToAmount": {
-                            "label": "LFOVelocityToAmount",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1463,23 +2452,18 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "FilterNoteSlideToFrequency": {
-                            "label": "FilterNoteSlideToFrequency",
+                        "PitchVelToSpread": {
+                            "label": "PitchVelToSpread",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "FilterEnv2ToFrequency": {
-                            "label": "FilterEnv2ToFrequency",
+                        "PositionVelToScan": {
+                            "label": "PositionVelToScan",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "GrainsChanceReverse": {
-                            "label": "GrainsChanceReverse",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionNotePBToPosition": {
-                            "label": "PositionNotePBToPosition",
+                        "VariationPressToVariation": {
+                            "label": "VariationPressToVariation",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1488,23 +2472,13 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "PositionEnv2ToPosition": {
-                            "label": "PositionEnv2ToPosition",
+                        "PositionSmooth": {
+                            "label": "PositionSmooth",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "PositionVelToPosition": {
-                            "label": "PositionVelToPosition",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Shape": {
-                            "label": "Shape",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainVariationToGrain": {
-                            "label": "GrainVariationToGrain",
+                        "LFOEnv2ToRate": {
+                            "label": "LFOEnv2ToRate",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1513,23 +2487,13 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "ShapeNoteSlideToShape": {
-                            "label": "ShapeNoteSlideToShape",
+                        "PositionScanDistance": {
+                            "label": "PositionScanDistance",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "LFOToAmp": {
-                            "label": "LFOToAmp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PitchKeyToPitch": {
-                            "label": "PitchKeyToPitch",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Env1Release": {
-                            "label": "Env1Release",
+                        "PositionEnv2ToScan": {
+                            "label": "PositionEnv2ToScan",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1538,23 +2502,13 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "FilterNotePressToFrequency": {
-                            "label": "FilterNotePressToFrequency",
+                        "AmpKeyToAmp": {
+                            "label": "AmpKeyToAmp",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "VariationVelToVariation": {
-                            "label": "VariationVelToVariation",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "GrainLFOToSize": {
-                            "label": "GrainLFOToSize",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "PositionSlideToScan": {
-                            "label": "PositionSlideToScan",
+                        "ShapeLFOToShape": {
+                            "label": "ShapeLFOToShape",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1563,23 +2517,18 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "Env1Attack": {
-                            "label": "Env1Attack",
+                        "GrainEnv2ToSize": {
+                            "label": "GrainEnv2ToSize",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "GrainNoteSlideToSize": {
-                            "label": "GrainNoteSlideToSize",
+                        "PositionGlobalVariation": {
+                            "label": "PositionGlobalVariation",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "PositionLFOToScan": {
-                            "label": "PositionLFOToScan",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "Position": {
-                            "label": "Position",
+                        "Env2Decay": {
+                            "label": "Env2Decay",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1588,8 +2537,433 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
+                        "FilterWidth": {
+                            "label": "FilterWidth",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterKeyToFrequency": {
+                            "label": "FilterKeyToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchNotePressAmount": {
+                            "label": "PitchNotePressAmount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionKeyToPosition": {
+                            "label": "PositionKeyToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchSlideToSpread": {
+                            "label": "PitchSlideToSpread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainsChanceReverse": {
+                            "label": "GrainsChanceReverse",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "AmpLevel": {
+                            "label": "AmpLevel",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchLFOToPitch": {
+                            "label": "PitchLFOToPitch",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "VariationLFOToVariation": {
+                            "label": "VariationLFOToVariation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Shape": {
+                            "label": "Shape",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "VariationKeyToVariation": {
+                            "label": "VariationKeyToVariation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOEnv2ToAmount": {
+                            "label": "LFOEnv2ToAmount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchKeyToPitch": {
+                            "label": "PitchKeyToPitch",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterFrequency": {
+                            "label": "FilterFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "AmpLFOToAmp": {
+                            "label": "AmpLFOToAmp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainLFOToSize": {
+                            "label": "GrainLFOToSize",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "AmpSlideToAmp": {
+                            "label": "AmpSlideToAmp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "ShapeNotePressToShape": {
+                            "label": "ShapeNotePressToShape",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionLFOToScan": {
+                            "label": "PositionLFOToScan",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env1Sustain": {
+                            "label": "Env1Sustain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env1Decay": {
+                            "label": "Env1Decay",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainSize": {
+                            "label": "GrainSize",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchTimeMode": {
+                            "label": "PitchTimeMode",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Variation": {
+                            "label": "Variation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterNoteSlideToFrequency": {
+                            "label": "FilterNoteSlideToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env2Release": {
+                            "label": "Env2Release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionScanRate": {
+                            "label": "PositionScanRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFORandToRate": {
+                            "label": "LFORandToRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionEnv2ToPosition": {
+                            "label": "PositionEnv2ToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainsDensity": {
+                            "label": "GrainsDensity",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOAmount": {
+                            "label": "LFOAmount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "ShapeNoteSlideToShape": {
+                            "label": "ShapeNoteSlideToShape",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchEnv2ToPitch": {
+                            "label": "PitchEnv2ToPitch",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env1KeyToRates": {
+                            "label": "Env1KeyToRates",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterNotePressToFrequency": {
+                            "label": "FilterNotePressToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchEnv2ToSpread": {
+                            "label": "PitchEnv2ToSpread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterResonance": {
+                            "label": "FilterResonance",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOBeatTime": {
+                            "label": "LFOBeatTime",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env1Attack": {
+                            "label": "Env1Attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchSpread": {
+                            "label": "PitchSpread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "AmpVelocityToAmp": {
+                            "label": "AmpVelocityToAmp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOVelocityToRate": {
+                            "label": "LFOVelocityToRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
                         "GrainVelToSize": {
                             "label": "GrainVelToSize",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "MonoSlewTime": {
+                            "label": "MonoSlewTime",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOVelocityToAmount": {
+                            "label": "LFOVelocityToAmount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFONotePBToRate": {
+                            "label": "LFONotePBToRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchRandomToPitch": {
+                            "label": "PitchRandomToPitch",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "VariationEnv2ToVariation": {
+                            "label": "VariationEnv2ToVariation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionNotePBToPosition": {
+                            "label": "PositionNotePBToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionVariationToPosition": {
+                            "label": "PositionVariationToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterEnv1ToFrequency": {
+                            "label": "FilterEnv1ToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env2Sustain": {
+                            "label": "Env2Sustain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainVariationToGrain": {
+                            "label": "GrainVariationToGrain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionRandToPosition": {
+                            "label": "PositionRandToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOKeyToAmount": {
+                            "label": "LFOKeyToAmount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env1Release": {
+                            "label": "Env1Release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "AmpPressToAmp": {
+                            "label": "AmpPressToAmp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFORate": {
+                            "label": "LFORate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionSlideToScan": {
+                            "label": "PositionSlideToScan",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFONoteSlideToAmount": {
+                            "label": "LFONoteSlideToAmount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOStereo": {
+                            "label": "LFOStereo",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOQuant": {
+                            "label": "LFOQuant",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Position": {
+                            "label": "Position",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchLFOToSpread": {
+                            "label": "PitchLFOToSpread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFONotePressToRate": {
+                            "label": "LFONotePressToRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env2Attack": {
+                            "label": "Env2Attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionLFOToPosition": {
+                            "label": "PositionLFOToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOKeyToRate": {
+                            "label": "LFOKeyToRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterEnv2ToFrequency": {
+                            "label": "FilterEnv2ToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchNotePBAmount": {
+                            "label": "PitchNotePBAmount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterLFOToFrequency": {
+                            "label": "FilterLFOToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Env2KeyToRates": {
+                            "label": "Env2KeyToRates",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionVelToPosition": {
+                            "label": "PositionVelToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchPressToSpread": {
+                            "label": "PitchPressToSpread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchTune": {
+                            "label": "PitchTune",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFOToAmp": {
+                            "label": "LFOToAmp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainsVolumeVariation": {
+                            "label": "GrainsVolumeVariation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "ShapeEnv2ToShape": {
+                            "label": "ShapeEnv2ToShape",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "VariationVelToVariation": {
+                            "label": "VariationVelToVariation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "Voices": {
+                            "label": "Voices",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "VariationSlideToVariation": {
+                            "label": "VariationSlideToVariation",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "GrainNoteSlideToSize": {
+                            "label": "GrainNoteSlideToSize",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PositionNoteSlideToPosition": {
+                            "label": "PositionNoteSlideToPosition",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "FilterVelocityToFrequency": {
+                            "label": "FilterVelocityToFrequency",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "LFONoteSlideToRate": {
+                            "label": "LFONoteSlideToRate",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "PitchTranspose": {
+                            "label": "PitchTranspose",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -2349,7 +3723,7 @@
                                 "value": 1000.0
                             },
                             "Buffer": {
-                                "value": 1.0
+                                "value": 0.0
                             },
                             "Env1KeyToRates": {
                                 "value": 0.0
@@ -3299,7 +4673,7 @@
                                             "value": 1000.0
                                         },
                                         "Buffer": {
-                                            "value": 1.0
+                                            "value": 0.0
                                         },
                                         "Env1KeyToRates": {
                                             "value": 0.0
