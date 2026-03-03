@@ -1,0 +1,209 @@
+{
+    "patcher": {
+        "fileversion": 1,
+        "appversion": {
+            "major": 9,
+            "minor": 1,
+            "revision": 1,
+            "architecture": "x64",
+            "modernui": 1
+        },
+        "classnamespace": "dsp.gen",
+        "rect": [ 34.0, 100.0, 1014.0, 983.0 ],
+        "boxes": [
+            {
+                "box": {
+                    "id": "obj-12",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 99.5, 172.0, 29.5, 22.0 ],
+                    "text": "*"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-11",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 99.5, 135.0, 71.0, 22.0 ],
+                    "text": "+= @max 2"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-10",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 99.5, 99.0, 26.0, 22.0 ],
+                    "text": "< 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-9",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 99.5, 65.0, 35.0, 22.0 ],
+                    "text": "delta"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-8",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 187.0, 135.0, 195.0, 22.0 ],
+                    "text": "in 5 @comment Dual Wave Enable"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-7",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 803.0, 135.0, 165.0, 22.0 ],
+                    "text": "in 4 @comment Wave 2 (0-7)"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-6",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 612.0, 135.0, 165.0, 22.0 ],
+                    "text": "in 3 @comment Wave 1 (0-7)"
+                }
+            },
+            {
+                "box": {
+                    "code": "ncos(phase) { return cos(phase * TWOPI); }\r\ntriangle(phase) { return 2 * (0.5 - (abs(phase - 0.5))); }\r\nramp_down(phase) { return 1 - phase; }\r\nhalf_trapezoid(phase) { return min(2 + (phase * -2), 1); }\r\n    \r\nSaw(phase, dw)\n{\n    dw = clamp((1 - dw) * 0.5, 0.001, 0.5);\n    dw_i = 0.5 - dw;\n    a = phase * (dw_i / dw);\n    b = (-1 * phase + 1) * (dw_i / (1 - dw));\n    return -ncos(phase + min(a, b));\n}\r\n\r\nSquare(phase, dw)\n{\n    dw = clamp (dw, 0.001, 0.96);\n    w = 1 / (1 - dw);\n    a = phase * w;\n    b = 1 - max (phase, a) + (dw * (w / 2));\n    return -ncos(max (min (min (a, b), 0.5), 0));\n}\r\n\r\nPulse(phase, dw)\n{\n    dw = clamp (dw, 0.001, 0.97);\n    a = 1 / (1 - dw);\n    b = (a / 2) * dw;\n    return -ncos(min (max ((phase * a) - b, 0), 1));\n}\r\n\r\nDblSine (phase, dw)\n{\n    dw = clamp ((1 - dw) * 0.5, 0.005, 0.5);\n    dw_i = 0.5 - dw;\n    a = phase * (dw_i / dw);\n    b = (-1 * phase + 1) * (dw_i / (1 - dw));\n    return -ncos(( phase + min (a, b) % 1) * 2);\n}\r\n\r\nSawPulse (phase, dw)\n{\n    dw = clamp ((1 - dw) * 0.5, 0.001, 0.5);\n    a = (phase < 0.5) ? phase : 0.5 * (phase - 0.5) / dw + 0.5;\n    return -ncos(min (a, 1));\n}\r\n\r\nReso1 (phase, dw)\n{\n    dw = interp (dw, 1, 16);\n    carrier = -ncos((phase * dw) % 1);\n    win = ramp_down (phase);\n    return ((win * carrier) + win) - 1;\n}\r\n\r\nReso2 (phase, dw)\n{\n    dw = interp (dw, 1, 16);\n    carrier = -ncos((phase * dw) % 1);\n    win = triangle (phase);\n    return ((win * carrier) + win) - 1;\n}\r\n\r\nReso3 (phase, dw)\n{\n    dw = interp (dw, 1, 16);\n    carrier = -ncos((phase * dw) % 1);\n    win = half_trapezoid (phase);\n    return ((win * carrier) + win) - 1;\n}\r\n\r\nShape(phase, dw, s)\r\n{\r\n    if (s < 1) {\r\n        return Saw(phase, dw);\r\n    } else if (s < 2) {\r\n        return Square(phase, dw);\r\n    } else if (s < 3) {\r\n        return Pulse(phase, dw);\r\n    } else if (s < 4) {\r\n        return DblSine(phase, dw);\r\n    } else if (s < 5) {\r\n        return SawPulse(phase, dw);\r\n    } else if (s < 6) {\r\n        return Reso1(phase, dw);\r\n    } else if (s < 7) {\r\n        return Reso2(phase, dw);\r\n    } else {\r\n        return Reso3(phase, dw);\r\n    }\r\n}\r\n\r\nx = in1;\r\nd = in2;\r\ns1 = in3;\r\ns2 = in4;\r\nalt = in5;\r\n\r\nif (alt < 0.5) {\r\n    out1 = Shape(x, d, s1);\r\n} else {\r\n    out1 = Shape(x, d, s2);\r\n}\r\n",
+                    "fontface": 0,
+                    "fontname": "<Monospaced>",
+                    "fontsize": 12.0,
+                    "id": "obj-5",
+                    "maxclass": "codebox",
+                    "numinlets": 5,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 50.0, 225.0, 541.0, 671.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-1",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 50.0, 14.0, 134.0, 22.0 ],
+                    "text": "in 1 @comment Phasor"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-2",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 409.0, 135.0, 175.0, 22.0 ],
+                    "text": "in 2 @comment Distortion (0-1)"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-4",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 50.0, 923.0, 35.0, 22.0 ],
+                    "text": "out 1"
+                }
+            }
+        ],
+        "lines": [
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 0 ],
+                    "order": 1,
+                    "source": [ "obj-1", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-9", 0 ],
+                    "order": 0,
+                    "source": [ "obj-1", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-11", 0 ],
+                    "source": [ "obj-10", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-12", 0 ],
+                    "source": [ "obj-11", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 4 ],
+                    "source": [ "obj-12", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 1 ],
+                    "source": [ "obj-2", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-4", 0 ],
+                    "source": [ "obj-5", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 2 ],
+                    "source": [ "obj-6", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 3 ],
+                    "source": [ "obj-7", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-12", 1 ],
+                    "source": [ "obj-8", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-10", 0 ],
+                    "source": [ "obj-9", 0 ]
+                }
+            }
+        ]
+    }
+}
