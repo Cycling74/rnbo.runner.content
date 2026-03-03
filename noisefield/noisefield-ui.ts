@@ -24,6 +24,9 @@ function in2(_v: number) {
   listout2 = [0, 8 + 2, 0, 0, 0.2];
   listout2 = [0, 8 + 3, 0.2, 0.2, 0];
   listout2 = [0, 8 + 4, 0.2, 0.2, 0.2];
+
+  //randomize
+  listout2 = [0, 31, 0.5, 0.5, 0.5];
 }
 
 //process aftertouch to send OSC
