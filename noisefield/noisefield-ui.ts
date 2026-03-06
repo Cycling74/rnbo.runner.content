@@ -8,7 +8,7 @@
 
 @state cur = new FixedFloatArray(5);
 @state last = new FixedFloatArray(5);
-@state xfade = new xfademul();
+@state xfade = new xfademul({fademode: "lin"});
 
 function init() {
   for (let i = 0; i < 5; i++) {
@@ -44,8 +44,8 @@ function drawoffsets(index: Index) {
 
   let pos = cur[index];
 
-  let upmul = xfade.next(0, pos);
-  let downmul = xfade.next(1, pos);
+  let upmul = xfade.next(pos, 0);
+  let downmul = xfade.next(pos, 1);
 
   listout2 = [0, 8 + index, upmul * color[0], upmul * color[1], upmul * color[2]];
   listout2 = [0, 0 + index, downmul * color[0], downmul * color[1], downmul * color[2]];
