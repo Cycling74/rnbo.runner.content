@@ -465,6 +465,34 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-48",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 2875.0, 123.0, 60.0, 23.0 ],
+                                    "rnbo_classname": "delay",
+                                    "rnbo_serial": 2,
+                                    "rnbo_uniqueid": "delay_obj-48",
+                                    "text": "delay 500"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-47",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 2875.0, 78.0, 68.0, 23.0 ],
+                                    "rnbo_classname": "presetbang",
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "presetbang_obj-47",
+                                    "text": "presetbang"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-42",
                                     "maxclass": "newobj",
                                     "numinlets": 1,
@@ -475,7 +503,7 @@
                                     "rnbo_extra_attributes": {
                                         "length": 0.0
                                     },
-                                    "rnbo_serial": 8,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "unpack_obj-42",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -617,7 +645,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 15,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "*_obj-40",
                                     "text": "* 0."
                                 }
@@ -634,7 +662,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 14,
+                                    "rnbo_serial": 2,
                                     "rnbo_uniqueid": "*_obj-39",
                                     "text": "* 0."
                                 }
@@ -651,7 +679,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 13,
+                                    "rnbo_serial": 3,
                                     "rnbo_uniqueid": "*_obj-31",
                                     "text": "* 0."
                                 }
@@ -3411,7 +3439,7 @@
                                         "list": "",
                                         "length": 0.0
                                     },
-                                    "rnbo_serial": 3,
+                                    "rnbo_serial": 5,
                                     "rnbo_uniqueid": "pak_obj-99",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -3512,7 +3540,7 @@
                                         "versionId": 1331432417,
                                         "changesPatcherIO": 0
                                     },
-                                    "text": "pak 0 i"
+                                    "text": "pak 4 i"
                                 }
                             },
                             {
@@ -3535,7 +3563,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 2563.0, 204.0, 237.0, 23.0 ],
+                                    "patching_rect": [ 2563.0, 176.0, 302.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
                                         "fromnormalized": "",
@@ -3545,7 +3573,6 @@
                                         "maximum": 4.0,
                                         "preset": 1,
                                         "meta": "",
-                                        "order": "0",
                                         "displayname": "",
                                         "minimum": 0.0,
                                         "displayorder": "-",
@@ -3553,7 +3580,7 @@
                                         "exponent": 1.0,
                                         "ctlin": -1.0
                                     },
-                                    "rnbo_serial": 6,
+                                    "rnbo_serial": 18,
                                     "rnbo_uniqueid": "move_view_index",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -3571,7 +3598,7 @@
                                                 "touched": 0,
                                                 "inlet": 1,
                                                 "type": "number",
-                                                "defaultValue": "0"
+                                                "defaultValue": "4"
                                             },
                                             "normalizedvalue": {
                                                 "attrOrProp": 1,
@@ -3947,7 +3974,7 @@
                                         "versionId": -1661410411,
                                         "changesPatcherIO": 0
                                     },
-                                    "text": "param move_view_index 0 @enum 0 1 2 3 -1",
+                                    "text": "param move_view_index 4 @enum 0 1 2 3 -1 @order first",
                                     "varname": "move_view_index"
                                 }
                             },
@@ -3958,7 +3985,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 2540.0, 159.0, 235.0, 23.0 ],
+                                    "patching_rect": [ 2540.0, 111.0, 235.0, 23.0 ],
                                     "rnbo_classname": "inport",
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "inport_obj-121",
@@ -5157,7 +5184,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 1,
+                                    "rnbo_serial": 4,
                                     "rnbo_uniqueid": "*_obj-214",
                                     "text": "* 64"
                                 }
@@ -5208,7 +5235,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 2,
+                                    "rnbo_serial": 5,
                                     "rnbo_uniqueid": "*_obj-209",
                                     "text": "* 16."
                                 }
@@ -5636,7 +5663,7 @@
                                     "rnbo_extra_attributes": {
                                         "length": 0.0
                                     },
-                                    "rnbo_serial": 1,
+                                    "rnbo_serial": 2,
                                     "rnbo_uniqueid": "unpack_obj-245",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -5918,7 +5945,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 3,
+                                    "rnbo_serial": 6,
                                     "rnbo_uniqueid": "*_obj-234",
                                     "text": "* 8"
                                 }
@@ -5969,7 +5996,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 4,
+                                    "rnbo_serial": 7,
                                     "rnbo_uniqueid": "*_obj-230",
                                     "text": "* 8"
                                 }
@@ -6482,7 +6509,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 5,
+                                    "rnbo_serial": 8,
                                     "rnbo_uniqueid": "*_obj-221",
                                     "text": "* 8."
                                 }
@@ -6499,7 +6526,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 6,
+                                    "rnbo_serial": 9,
                                     "rnbo_uniqueid": "*_obj-220",
                                     "text": "* 8."
                                 }
@@ -6516,7 +6543,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 7,
+                                    "rnbo_serial": 10,
                                     "rnbo_uniqueid": "*_obj-219",
                                     "text": "* 4."
                                 }
@@ -6533,7 +6560,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 8,
+                                    "rnbo_serial": 11,
                                     "rnbo_uniqueid": "*_obj-218",
                                     "text": "* 4."
                                 }
@@ -6804,7 +6831,7 @@
                                     "rnbo_extra_attributes": {
                                         "length": 0.0
                                     },
-                                    "rnbo_serial": 2,
+                                    "rnbo_serial": 3,
                                     "rnbo_uniqueid": "unpack_obj-198",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -24157,7 +24184,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 9,
+                                    "rnbo_serial": 12,
                                     "rnbo_uniqueid": "*_obj-52",
                                     "text": "* 127."
                                 }
@@ -24174,7 +24201,7 @@
                                     "rnbo_extra_attributes": {
                                         "length": 0.0
                                     },
-                                    "rnbo_serial": 3,
+                                    "rnbo_serial": 4,
                                     "rnbo_uniqueid": "unpack_obj-51",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -24494,7 +24521,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 10,
+                                    "rnbo_serial": 13,
                                     "rnbo_uniqueid": "*_obj-27",
                                     "text": "* 127."
                                 }
@@ -24511,7 +24538,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 11,
+                                    "rnbo_serial": 14,
                                     "rnbo_uniqueid": "*_obj-26",
                                     "text": "* 127."
                                 }
@@ -24545,7 +24572,7 @@
                                     "rnbo_extra_attributes": {
                                         "hot": 0
                                     },
-                                    "rnbo_serial": 12,
+                                    "rnbo_serial": 15,
                                     "rnbo_uniqueid": "*_obj-20",
                                     "text": "* 127."
                                 }
@@ -25335,7 +25362,7 @@
                                     "rnbo_extra_attributes": {
                                         "length": 0.0
                                     },
-                                    "rnbo_serial": 7,
+                                    "rnbo_serial": 5,
                                     "rnbo_uniqueid": "unpack_obj-153",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -25691,7 +25718,7 @@
                                     "rnbo_extra_attributes": {
                                         "length": 0.0
                                     },
-                                    "rnbo_serial": 5,
+                                    "rnbo_serial": 6,
                                     "rnbo_uniqueid": "unpack_obj-13",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -26021,7 +26048,7 @@
                                                     "rnbo_extra_attributes": {
                                                         "meta": ""
                                                     },
-                                                    "rnbo_serial": 2,
+                                                    "rnbo_serial": 1,
                                                     "rnbo_uniqueid": "in_obj-6",
                                                     "rnboinfo": {
                                                         "needsInstanceInfo": 1,
@@ -33194,6 +33221,18 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-48", 0 ],
+                                    "source": [ "obj-47", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-112", 0 ],
+                                    "source": [ "obj-48", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-6", 0 ],
                                     "source": [ "obj-5", 0 ]
                                 }
@@ -33672,7 +33711,7 @@
                                 "value": 1.0
                             },
                             "move_view_index": {
-                                "value": 0.0
+                                "value": 4.0
                             },
                             "spin": {
                                 "value": 0.0
@@ -33723,8 +33762,6 @@
                                 "one-shot[3]": [
                                     {                                    }
                                 ],
-                                "measure-counter": {                                },
-                                "p_obj-16": {                                },
                                 "bouncing-sim": {
                                     "vy": {
                                         "value": 0.0
@@ -33747,7 +33784,9 @@
                                     "radius": {
                                         "value": 10.0
                                     }
-                                }
+                                },
+                                "measure-counter": {                                },
+                                "p_obj-16": {                                }
                             },
                             "vel-y": {
                                 "value": 0.0
@@ -33779,7 +33818,7 @@
                                             "value": 1.0
                                         },
                                         "move_view_index": {
-                                            "value": 0.0
+                                            "value": 4.0
                                         },
                                         "spin": {
                                             "value": 0.0
@@ -33830,8 +33869,6 @@
                                             "one-shot[3]": [
                                                 {                                                }
                                             ],
-                                            "measure-counter": {                                            },
-                                            "p_obj-16": {                                            },
                                             "bouncing-sim": {
                                                 "vy": {
                                                     "value": 0.0
@@ -33854,7 +33891,9 @@
                                                 "radius": {
                                                     "value": 10.0
                                                 }
-                                            }
+                                            },
+                                            "measure-counter": {                                            },
+                                            "p_obj-16": {                                            }
                                         },
                                         "vel-y": {
                                             "value": 0.0
@@ -33990,14 +34029,6 @@
             "obj-22": [ "samples", "samples", 0 ],
             "obj-72": [ "live.gain~", "live.gain~", 0 ],
             "obj-9": [ "start-x", "start-x", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0

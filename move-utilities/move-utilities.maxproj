@@ -1,8 +1,8 @@
 {
-    "name": "ez101",
+    "name": "move-utilities",
     "version": 1,
-    "creationdate": 3855410695,
-    "modificationdate": 3856030157,
+    "creationdate": 3856028575,
+    "modificationdate": 3856029976,
     "viewrect": [ 25.0, 119.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -10,10 +10,29 @@
     "autolocalize": 0,
     "contents": {
         "patchers": {
-            "ez101.maxpat": {
+            "view-controller-rnbo.maxpat": {
                 "kind": "patcher",
                 "local": 1,
-                "toplevel": 1
+                "singleton": {
+                    "bootpath": "~/c74/rnbo.runner.content/chill-sunset/patchers",
+                    "projectrelativepath": "../chill-sunset/patchers"
+                }
+            },
+            "transport-controller-rnbo.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/c74/rnbo.runner.content/chill-sunset/patchers",
+                    "projectrelativepath": "../chill-sunset/patchers"
+                }
+            },
+            "sequence-indicator.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "flusher.maxpat": {
+                "kind": "patcher",
+                "local": 1
             },
             "input-driver.rnbopat": {
                 "kind": "rnbopat",
@@ -30,12 +49,6 @@
                     "bootpath": "~/c74/rnbo.move.templates/patchers",
                     "projectrelativepath": "../../rnbo.move.templates/patchers"
                 }
-            }
-        },
-        "code": {
-            "pdosc.gendsp": {
-                "kind": "gendsp",
-                "local": 1
             }
         },
         "data": {        }
