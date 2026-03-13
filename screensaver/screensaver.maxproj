@@ -2,7 +2,7 @@
     "name": "screensaver",
     "version": 1,
     "creationdate": 3855421586,
-    "modificationdate": 3855425200,
+    "modificationdate": 3856266800,
     "viewrect": [ 25.0, 119.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -31,11 +31,6 @@
                     "bootpath": "~/c74/rnbo.move.templates/patchers",
                     "projectrelativepath": "../../rnbo.move.templates/patchers"
                 }
-            },
-            "transport-controller-rnbo.maxpat": {
-                "kind": "patcher",
-                "local": 1,
-                "disclosed": 0
             }
         },
         "media": {        },
