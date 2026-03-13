@@ -2,7 +2,7 @@
     "name": "move-utilities",
     "version": 1,
     "creationdate": 3856028575,
-    "modificationdate": 3856263913,
+    "modificationdate": 3856265475,
     "viewrect": [ 25.0, 119.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -45,6 +45,14 @@
                     "bootpath": "~/c74/rnbo.move.templates/patchers",
                     "projectrelativepath": "../../rnbo.move.templates/patchers"
                 }
+            },
+            "move-keys.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "simple-track-controller.maxpat": {
+                "kind": "patcher",
+                "local": 1
             }
         },
         "data": {        }
