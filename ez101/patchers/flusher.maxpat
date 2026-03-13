@@ -128,10 +128,42 @@
                             "modernui": 1
                         },
                         "classnamespace": "rnbo",
-                        "rect": [ 623.0, 207.0, 1000.0, 780.0 ],
+                        "rect": [ 623.0, 207.0, 638.0, 780.0 ],
                         "default_fontname": "Lato",
                         "title": "flush",
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-2",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 352.3333333333333, 535.0, 58.0, 23.0 ],
+                                    "rnbo_classname": "outport",
+                                    "rnbo_extra_attributes": {
+                                        "meta": ""
+                                    },
+                                    "rnbo_serial": 2,
+                                    "rnbo_uniqueid": "outport_obj-2",
+                                    "text": "outport fl"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-1",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 482.0, 380.0, 62.0, 23.0 ],
+                                    "rnbo_classname": "outport",
+                                    "rnbo_extra_attributes": {
+                                        "meta": ""
+                                    },
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "outport_obj-1",
+                                    "text": "outport tp"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-19",
@@ -161,7 +193,7 @@
                                     "rnbo_extra_attributes": {
                                         "initial": 0.0
                                     },
-                                    "rnbo_serial": 2,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "i_obj-18",
                                     "text": "i"
                                 }
@@ -270,7 +302,7 @@
                                     "rnbo_extra_attributes": {
                                         "length": 0.0
                                     },
-                                    "rnbo_serial": 2,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "unpack_obj-16",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -387,7 +419,7 @@
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 480.0, 297.0, 57.0, 23.0 ],
                                     "rnbo_classname": "set",
-                                    "rnbo_serial": 2,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "set_obj-15",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -567,7 +599,7 @@
                                     "rnbo_extra_attributes": {
                                         "initial": 0.0
                                     },
-                                    "rnbo_serial": 1,
+                                    "rnbo_serial": 2,
                                     "rnbo_uniqueid": "i_obj-12",
                                     "text": "i"
                                 }
@@ -581,7 +613,7 @@
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 188.0, 263.0, 67.0, 23.0 ],
                                     "rnbo_classname": "set",
-                                    "rnbo_serial": 1,
+                                    "rnbo_serial": 2,
                                     "rnbo_uniqueid": "set_obj-11",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -1180,7 +1212,15 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-13", 6 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-14", 0 ],
+                                    "order": 1,
                                     "source": [ "obj-13", 6 ]
                                 }
                             },
@@ -1231,7 +1271,15 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-19", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-6", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-19", 0 ]
                                 }
                             },
@@ -1417,14 +1465,6 @@
         ],
         "parameters": {
             "obj-1": [ "rnbo~", "rnbo~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0
