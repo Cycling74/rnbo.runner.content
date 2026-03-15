@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 59.0, 119.0, 1000.0, 780.0 ],
+        "rect": [ 223.0, 100.0, 1000.0, 780.0 ],
         "boxes": [
             {
                 "box": {
@@ -765,19 +765,19 @@
                                     "patching_rect": [ 854.0, 109.0, 140.0, 66.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "tonormalized": "",
                                         "steps": 0.0,
-                                        "unit": "",
-                                        "order": "0",
-                                        "fromnormalized": "",
-                                        "preset": 1,
-                                        "displayname": "",
-                                        "meta": "",
+                                        "tonormalized": "",
+                                        "ctlin": -1.0,
                                         "enum": "",
+                                        "fromnormalized": "",
+                                        "unit": "",
                                         "sendinit": 1,
-                                        "ctlin": -1.0
+                                        "preset": 1,
+                                        "order": "0",
+                                        "meta": "",
+                                        "displayname": ""
                                     },
-                                    "rnbo_serial": 4,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "freq_high",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -1182,19 +1182,19 @@
                                     "patching_rect": [ 579.0, 109.0, 130.0, 66.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "tonormalized": "",
                                         "steps": 0.0,
-                                        "unit": "",
-                                        "order": "0",
-                                        "fromnormalized": "",
-                                        "preset": 1,
-                                        "displayname": "",
-                                        "meta": "",
+                                        "tonormalized": "",
+                                        "ctlin": -1.0,
                                         "enum": "",
+                                        "fromnormalized": "",
+                                        "unit": "",
                                         "sendinit": 1,
-                                        "ctlin": -1.0
+                                        "preset": 1,
+                                        "order": "0",
+                                        "meta": "",
+                                        "displayname": ""
                                     },
-                                    "rnbo_serial": 3,
+                                    "rnbo_serial": 2,
                                     "rnbo_uniqueid": "freq_low",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -1601,7 +1601,7 @@
                                                 "modernui": 1
                                             },
                                             "classnamespace": "dsp.gen",
-                                            "rect": [ 84.0, 145.0, 1089.0, 883.0 ],
+                                            "rect": [ 469.0, 100.0, 1089.0, 883.0 ],
                                             "boxes": [
                                                 {
                                                     "box": {
@@ -1658,10 +1658,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 4 @comment freq_high",
                                                         "patching_rect": [ 876.0, 14.0, 146.0, 22.0 ],
+                                                        "outlettype": [ "" ],
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
-                                                        "id": "obj-6",
-                                                        "outlettype": [ "" ]
+                                                        "id": "obj-6"
                                                     }
                                                 },
                                                 {
@@ -1669,10 +1669,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 3 @comment freq_low",
                                                         "patching_rect": [ 600.6666666666666, 14.0, 141.0, 22.0 ],
+                                                        "outlettype": [ "" ],
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
-                                                        "id": "obj-5",
-                                                        "outlettype": [ "" ]
+                                                        "id": "obj-5"
                                                     }
                                                 },
                                                 {
@@ -1680,10 +1680,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 1 @comment left",
                                                         "patching_rect": [ 50.0, 14.0, 112.0, 22.0 ],
+                                                        "outlettype": [ "" ],
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
-                                                        "id": "obj-1",
-                                                        "outlettype": [ "" ]
+                                                        "id": "obj-1"
                                                     }
                                                 },
                                                 {
@@ -1691,24 +1691,24 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 2 @comment right",
                                                         "patching_rect": [ 325.3333333333333, 14.0, 119.0, 22.0 ],
+                                                        "outlettype": [ "" ],
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
-                                                        "id": "obj-2",
-                                                        "outlettype": [ "" ]
+                                                        "id": "obj-2"
                                                     }
                                                 },
                                                 {
                                                     "box": {
                                                         "maxclass": "codebox",
                                                         "patching_rect": [ 50.0, 70.0, 845.0, 729.0 ],
+                                                        "fontsize": 12.0,
+                                                        "outlettype": [ "", "", "", "", "", "" ],
+                                                        "fontname": "<Monospaced>",
                                                         "numinlets": 4,
                                                         "fontface": 0,
                                                         "numoutlets": 6,
                                                         "id": "obj-3",
-                                                        "fontsize": 12.0,
-                                                        "outlettype": [ "", "", "", "", "", "" ],
-                                                        "fontname": "<Monospaced>",
-                                                        "code": "safe_freq(freq)\n{\n    return clamp(freq, 1, samplerate * 0.45);\n}\n\nsvf_tpt_raw_coeff(f, q)\n{\n    // TPT integrator and damping terms\n    // use \"svf_tpt\" prefix to work around gen behavior \n    // where it writes to parent history if name matches\n    svf_tpt_g = tan(pi * f / samplerate);\n    svf_tpt_k = 1 / q;\n    svf_tpt_a1 = 1 / (1 + svf_tpt_g * (svf_tpt_g + svf_tpt_k));\n\n    return svf_tpt_g, svf_tpt_k, svf_tpt_a1;\n}\n\nsvf_tpt_raw(x, g, k, a1)\n{\n    History z1(0);\n    History z2(0);\n\n    a2 = g * a1;\n    a3 = g * a2;\n\n    v3 = x - z2;\n    v1 = a1 * z1 + a2 * v3;\n    v2 = z2 + a2 * z1 + a3 * v3;\n\n    z1 = 2 * v1 - z1;\n    z2 = 2 * v2 - z2;\n\n    svf_tpt_lp = v2;\n    svf_tpt_hp = x - k * v1 - v2;\n    svf_tpt_bp = v1;\n    svf_tpt_notch = svf_tpt_hp + svf_tpt_lp;\n    svf_tpt_peak = svf_tpt_lp - svf_tpt_hp;\n\n    return svf_tpt_lp, svf_tpt_hp, svf_tpt_bp, svf_tpt_notch, svf_tpt_peak;\n}\n\nsvf_tpt_split_4p_raw(x, g, k, a1)\n{\n    lp, hp = svf_tpt_raw(x, g, k, a1);\n    lp_out, hp_ignore = svf_tpt_raw(lp, g, k, a1);\n    lp_ignore, hp_out = svf_tpt_raw(hp, g, k, a1);\n    return lp_out, hp_out;\n}\n\nlr4_split(x, freq)\n{\n    History f(-1);\n    History g(1);\n    History k(1);\n    History a1(1);\n\n    if (freq != f) {\n        sf = safe_freq(freq);\n        if (sf != f) {\n            f = sf;\n            g, k, a1 = svf_tpt_raw_coeff(f, 0.70710678);\n        }\n    }\n \n    // reuse TPT integrator and damping terms for the split\n    low, high = svf_tpt_split_4p_raw(x, g, k, a1);\n    return low, high;\n}\n\nlr4_3band_split(x, low_freq, high_freq)\n{\n    low, upper = lr4_split(x, low_freq);\n    mid, high = lr4_split(upper, high_freq);\n    return low, mid, high;\n}\n\nlr4_split_stereo(left, right, freq)\n{\n    History f(-1);\n    History g(1);\n    History k(1);\n    History a1(1);\n\n    if (freq != f) {\n        sf = safe_freq(freq);\n        if (sf != f) {\n            f = sf;\n            g, k, a1 = svf_tpt_raw_coeff(f, 0.70710678);\n        }\n    }\n \n    // reuse TPT integrator and damping terms for the split\n    left_low, left_high = svf_tpt_split_4p_raw(left, g, k, a1);\n    right_low, right_high = svf_tpt_split_4p_raw(right, g, k, a1);\n    return left_low, right_low, left_high, right_high;\n}\n\nlr4_3band_split_stereo(left, right, low_freq, high_freq)\n{\n    left_low, right_low, left_upper, right_upper = lr4_split_stereo(left, right, low_freq);\n    left_mid, right_mid, left_high, right_high = lr4_split_stereo(left_upper, right_upper, high_freq);\n    return left_low, right_low, left_mid, right_mid, left_high, right_high;\n}\n\nout1, out2, out3, out4, out5, out6 = lr4_3band_split_stereo(in1, in2, in3, in4);"
+                                                        "code": "\r\n// svf based on public domain algorithm (c) Andrew Simper, Cytomic 2013-2016\r\n// https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf\r\n\r\n\r\nsafe_freq(freq)\n{\n    return clamp(freq, 1, samplerate * 0.45);\n}\n\nsvf_tpt_raw_coeff(f, q)\n{\n    // TPT integrator and damping terms\n    // use \"svf_tpt\" prefix to work around gen behavior \n    // where it writes to parent history if name matches\n    svf_tpt_g = tan(pi * f / samplerate);\n    svf_tpt_k = 1 / q;\n    svf_tpt_a1 = 1 / (1 + svf_tpt_g * (svf_tpt_g + svf_tpt_k));\n\n    return svf_tpt_g, svf_tpt_k, svf_tpt_a1;\n}\n\nsvf_tpt_raw(x, g, k, a1)\n{\n    History z1(0);\n    History z2(0);\n\n    a2 = g * a1;\n    a3 = g * a2;\n\n    v3 = x - z2;\n    v1 = a1 * z1 + a2 * v3;\n    v2 = z2 + a2 * z1 + a3 * v3;\n\n    z1 = 2 * v1 - z1;\n    z2 = 2 * v2 - z2;\n\n    svf_tpt_lp = v2;\n    svf_tpt_hp = x - k * v1 - v2;\n    svf_tpt_bp = v1;\n    svf_tpt_notch = svf_tpt_hp + svf_tpt_lp;\n    svf_tpt_peak = svf_tpt_lp - svf_tpt_hp;\n    svf_tpt_all = svf_tpt_notch - (k * svf_tpt_bp); // v0 - (2 * k * v1);\n\n    return svf_tpt_lp, svf_tpt_hp, svf_tpt_bp, svf_tpt_notch, svf_tpt_peak;\n}\n\nsvf_tpt_split_4p_raw(x, g, k, a1)\n{\n    lp, hp = svf_tpt_raw(x, g, k, a1);\n    lp_out, hp_ignore = svf_tpt_raw(lp, g, k, a1);\n    lp_ignore, hp_out = svf_tpt_raw(hp, g, k, a1);\n    return lp_out, hp_out;\n}\n\nlr4_split(x, freq)\n{\n    History f(-1);\n    History g(1);\n    History k(1);\n    History a1(1);\n\n    if (freq != f) {\n        sf = safe_freq(freq);\n        if (sf != f) {\n            f = sf;\n            g, k, a1 = svf_tpt_raw_coeff(f, 0.70710678);\n        }\n    }\n \n    // reuse TPT integrator and damping terms for the split\n    low, high = svf_tpt_split_4p_raw(x, g, k, a1);\n    return low, high;\n}\n\nlr4_3band_split(x, low_freq, high_freq)\n{\n    low, upper = lr4_split(x, low_freq);\n    mid, high = lr4_split(upper, high_freq);\n    return low, mid, high;\n}\n\nlr4_split_stereo(left, right, freq)\n{\n    History f(-1);\n    History g(1);\n    History k(1);\n    History a1(1);\n\n    if (freq != f) {\n        sf = safe_freq(freq);\n        if (sf != f) {\n            f = sf;\n            g, k, a1 = svf_tpt_raw_coeff(f, 0.70710678);\n        }\n    }\n \n    // reuse TPT integrator and damping terms for the split\n    left_low, left_high = svf_tpt_split_4p_raw(left, g, k, a1);\n    right_low, right_high = svf_tpt_split_4p_raw(right, g, k, a1);\n    return left_low, right_low, left_high, right_high;\n}\n\nlr4_3band_split_stereo(left, right, low_freq, high_freq)\n{\n    left_low, right_low, left_upper, right_upper = lr4_split_stereo(left, right, low_freq);\n    left_mid, right_mid, left_high, right_high = lr4_split_stereo(left_upper, right_upper, high_freq);\n    return left_low, right_low, left_mid, right_mid, left_high, right_high;\n}\n\nout1, out2, out3, out4, out5, out6 = lr4_3band_split_stereo(in1, in2, in3, in4);"
                                                     }
                                                 },
                                                 {

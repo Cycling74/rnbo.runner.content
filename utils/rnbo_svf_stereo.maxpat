@@ -175,7 +175,7 @@
                                     "outlettype": [ "signal" ],
                                     "patching_rect": [ 950.0, 278.0, 130.0, 23.0 ],
                                     "rnbo_classname": "rampsmooth~",
-                                    "rnbo_serial": 5,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "rampsmooth~_obj-24",
                                     "text": "rampsmooth~ 512 512"
                                 }
@@ -192,7 +192,7 @@
                                     "rnbo_extra_attributes": {
                                         "unit": "ms"
                                     },
-                                    "rnbo_serial": 9,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "sig~_obj-21",
                                     "text": "sig~ 1"
                                 }
@@ -207,12 +207,12 @@
                                     "patching_rect": [ 587.0, 540.0, 45.0, 23.0 ],
                                     "rnbo_classname": "xfade~",
                                     "rnbo_extra_attributes": {
-                                        "fademode": "eqpower",
-                                        "inputs": 2.0,
                                         "boundmode": "clip",
+                                        "inputs": 2.0,
+                                        "fademode": "eqpower",
                                         "positionmode": "phase"
                                     },
-                                    "rnbo_serial": 2,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "xfade~_obj-19",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -377,12 +377,12 @@
                                     "patching_rect": [ 333.0, 540.0, 45.0, 23.0 ],
                                     "rnbo_classname": "xfade~",
                                     "rnbo_extra_attributes": {
-                                        "fademode": "eqpower",
-                                        "inputs": 2.0,
                                         "boundmode": "clip",
+                                        "inputs": 2.0,
+                                        "fademode": "eqpower",
                                         "positionmode": "phase"
                                     },
-                                    "rnbo_serial": 1,
+                                    "rnbo_serial": 2,
                                     "rnbo_uniqueid": "xfade~_obj-17",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -547,21 +547,21 @@
                                     "patching_rect": [ 950.0, 180.0, 315.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "tonormalized": "",
-                                        "minimum": 0.0,
                                         "steps": 2.0,
-                                        "unit": "",
-                                        "order": "0",
-                                        "fromnormalized": "",
-                                        "preset": 1,
-                                        "displayname": "",
-                                        "meta": "",
+                                        "tonormalized": "",
+                                        "ctlin": -1.0,
                                         "exponent": 1.0,
-                                        "sendinit": 1,
+                                        "fromnormalized": "",
+                                        "unit": "",
                                         "maximum": 1.0,
-                                        "ctlin": -1.0
+                                        "sendinit": 1,
+                                        "preset": 1,
+                                        "order": "0",
+                                        "meta": "",
+                                        "displayname": "",
+                                        "minimum": 0.0
                                     },
-                                    "rnbo_serial": 15,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "order",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -971,7 +971,7 @@
                                     "rnbo_extra_attributes": {
                                         "unit": "ms"
                                     },
-                                    "rnbo_serial": 1,
+                                    "rnbo_serial": 2,
                                     "rnbo_uniqueid": "sig~_obj-23",
                                     "text": "sig~ 0"
                                 }
@@ -984,24 +984,24 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 854.0, 108.0, 326.0, 37.0 ],
+                                    "patching_rect": [ 854.0, 108.0, 394.0, 37.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
+                                        "steps": 6.0,
                                         "tonormalized": "",
-                                        "minimum": 0.0,
-                                        "steps": 5.0,
-                                        "unit": "",
-                                        "order": "0",
-                                        "fromnormalized": "",
-                                        "preset": 1,
-                                        "displayname": "",
-                                        "meta": "",
+                                        "ctlin": -1.0,
                                         "exponent": 1.0,
+                                        "fromnormalized": "",
+                                        "unit": "",
+                                        "maximum": 5.0,
                                         "sendinit": 1,
-                                        "maximum": 4.0,
-                                        "ctlin": -1.0
+                                        "preset": 1,
+                                        "order": "0",
+                                        "meta": "",
+                                        "displayname": "",
+                                        "minimum": 0.0
                                     },
-                                    "rnbo_serial": 10,
+                                    "rnbo_serial": 2,
                                     "rnbo_uniqueid": "filtertype",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -1067,7 +1067,7 @@
                                                 "deprecated": 0,
                                                 "touched": 1,
                                                 "type": "number",
-                                                "defaultValue": "4",
+                                                "defaultValue": "5",
                                                 "label": "Maximum",
                                                 "displayorder": 2,
                                                 "disabledInMaxInspector": 1
@@ -1084,7 +1084,7 @@
                                                 "deprecated": 0,
                                                 "touched": 0,
                                                 "type": "number",
-                                                "defaultValue": "4",
+                                                "defaultValue": "5",
                                                 "label": "Maximum",
                                                 "displayorder": 2
                                             },
@@ -1131,7 +1131,7 @@
                                                 "deprecated": 0,
                                                 "touched": 1,
                                                 "type": "number",
-                                                "defaultValue": "5",
+                                                "defaultValue": "6",
                                                 "label": "Steps",
                                                 "displayorder": 8,
                                                 "disabledInMaxInspector": 1
@@ -1395,7 +1395,7 @@
                                         "versionId": -1093178486,
                                         "changesPatcherIO": 0
                                     },
-                                    "text": "param filtertype 0 @enum lowpass highpass bandpass notch peak @displayorder 2",
+                                    "text": "param filtertype 0 @enum lowpass highpass bandpass notch peak allpass @displayorder 2",
                                     "varname": "filtertype"
                                 }
                             },
@@ -1453,7 +1453,7 @@
                                     "rnbo_extra_attributes": {
                                         "unit": "ms"
                                     },
-                                    "rnbo_serial": 7,
+                                    "rnbo_serial": 4,
                                     "rnbo_uniqueid": "sig~_obj-9",
                                     "text": "sig~ 10"
                                 }
@@ -1467,7 +1467,7 @@
                                     "outlettype": [ "signal" ],
                                     "patching_rect": [ 703.5, 228.0, 75.0, 23.0 ],
                                     "rnbo_classname": "mstosamps~",
-                                    "rnbo_serial": 2,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "mstosamps~_obj-8",
                                     "text": "mstosamps~"
                                 }
@@ -1524,19 +1524,19 @@
                                     "patching_rect": [ 648.0, 108.0, 131.0, 66.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "tonormalized": "",
                                         "steps": 0.0,
-                                        "unit": "",
-                                        "order": "0",
-                                        "fromnormalized": "",
-                                        "preset": 1,
-                                        "displayname": "",
-                                        "meta": "",
+                                        "tonormalized": "",
+                                        "ctlin": -1.0,
                                         "enum": "",
+                                        "fromnormalized": "",
+                                        "unit": "",
                                         "sendinit": 1,
-                                        "ctlin": -1.0
+                                        "preset": 1,
+                                        "order": "0",
+                                        "meta": "",
+                                        "displayname": ""
                                     },
-                                    "rnbo_serial": 9,
+                                    "rnbo_serial": 3,
                                     "rnbo_uniqueid": "resonance",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -1941,19 +1941,19 @@
                                     "patching_rect": [ 442.0, 108.0, 139.0, 66.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "tonormalized": "",
                                         "steps": 0.0,
-                                        "unit": "",
-                                        "order": "0",
-                                        "fromnormalized": "",
-                                        "preset": 1,
-                                        "displayname": "",
-                                        "meta": "",
+                                        "tonormalized": "",
+                                        "ctlin": -1.0,
                                         "enum": "",
+                                        "fromnormalized": "",
+                                        "unit": "",
                                         "sendinit": 1,
-                                        "ctlin": -1.0
+                                        "preset": 1,
+                                        "order": "0",
+                                        "meta": "",
+                                        "displayname": ""
                                     },
-                                    "rnbo_serial": 16,
+                                    "rnbo_serial": 4,
                                     "rnbo_uniqueid": "frequency",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -2367,10 +2367,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 5 @comment mode",
                                                         "patching_rect": [ 876.0, 14.0, 126.0, 22.0 ],
+                                                        "outlettype": [ "" ],
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
-                                                        "id": "obj-12",
-                                                        "outlettype": [ "" ]
+                                                        "id": "obj-12"
                                                     }
                                                 },
                                                 {
@@ -2408,10 +2408,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 4 @comment resonance",
                                                         "patching_rect": [ 669.5, 14.0, 152.0, 22.0 ],
+                                                        "outlettype": [ "" ],
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
-                                                        "id": "obj-6",
-                                                        "outlettype": [ "" ]
+                                                        "id": "obj-6"
                                                     }
                                                 },
                                                 {
@@ -2419,10 +2419,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 3 @comment frequency",
                                                         "patching_rect": [ 463.0, 14.0, 149.0, 22.0 ],
+                                                        "outlettype": [ "" ],
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
-                                                        "id": "obj-5",
-                                                        "outlettype": [ "" ]
+                                                        "id": "obj-5"
                                                     }
                                                 },
                                                 {
@@ -2430,10 +2430,10 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 1 @comment left",
                                                         "patching_rect": [ 50.0, 14.0, 112.0, 22.0 ],
+                                                        "outlettype": [ "" ],
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
-                                                        "id": "obj-1",
-                                                        "outlettype": [ "" ]
+                                                        "id": "obj-1"
                                                     }
                                                 },
                                                 {
@@ -2441,24 +2441,24 @@
                                                         "maxclass": "newobj",
                                                         "text": "in 2 @comment right",
                                                         "patching_rect": [ 256.5, 14.0, 119.0, 22.0 ],
+                                                        "outlettype": [ "" ],
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
-                                                        "id": "obj-2",
-                                                        "outlettype": [ "" ]
+                                                        "id": "obj-2"
                                                     }
                                                 },
                                                 {
                                                     "box": {
                                                         "maxclass": "codebox",
                                                         "patching_rect": [ 50.0, 70.0, 845.0, 729.0 ],
+                                                        "fontsize": 12.0,
+                                                        "outlettype": [ "", "", "", "" ],
+                                                        "fontname": "<Monospaced>",
                                                         "numinlets": 5,
                                                         "fontface": 0,
                                                         "numoutlets": 4,
                                                         "id": "obj-3",
-                                                        "fontsize": 12.0,
-                                                        "outlettype": [ "", "", "", "" ],
-                                                        "fontname": "<Monospaced>",
-                                                        "code": "\nsvf_tpt_raw_coeff(f, q)\n{\n    // TPT integrator and damping terms\n    // use \"svf_tpt\" prefix to work around gen behavior \n    // where it writes to parent history if name matches\n    svf_tpt_g = tan(pi * f / samplerate);\n    svf_tpt_k = 1 / q;\n    svf_tpt_a1 = 1 / (1 + svf_tpt_g * (svf_tpt_g + svf_tpt_k));\n\n    return svf_tpt_g, svf_tpt_k, svf_tpt_a1;\n}\n\r\nsvf_tpt_raw(x, g, k, a1)\n{\n    History z1(0);\n    History z2(0);\n\n    a2 = g * a1;\n    a3 = g * a2;\n\n    v3 = x - z2;\n    v1 = a1 * z1 + a2 * v3;\n    v2 = z2 + a2 * z1 + a3 * v3;\n\n    z1 = 2 * v1 - z1;\n    z2 = 2 * v2 - z2;\n\n    svf_tpt_lp = v2;\n    svf_tpt_hp = x - k * v1 - v2;\n    svf_tpt_bp = v1;\n    svf_tpt_notch = svf_tpt_hp + svf_tpt_lp;\n    svf_tpt_peak = svf_tpt_lp - svf_tpt_hp;\n\n    return svf_tpt_lp, svf_tpt_hp, svf_tpt_bp, svf_tpt_notch, svf_tpt_peak;\n}\n\nsvf_tpt_stereo(left, right, freq, resonance, mode)\n{\n    History f(-1);\n    History q(-1);\n    History g(1);\n    History k(1);\n    History a1(1);\n\r\n    // update coefficients if anything changed\n    if (freq != f || resonance != q) {\n        sf = clamp(freq, 1, samplerate * 0.45);\r\n        sq = clamp(resonance, 0.001, 100);\n        if (sf != f || sq != q ) {\n            f = sf;\r\n            q = sq;\r\n            g, k, a1 = svf_tpt_raw_coeff(f, q);\n        }\n    }\n\n    left_lp, left_hp, left_bp, left_notch, left_peak = svf_tpt_raw(left, g, k, a1);\n    right_lp, right_hp, right_bp, right_notch, right_peak = svf_tpt_raw(right, g, k, a1);\r\n        \r\n    smooth_amt = 256;\r\n    lp_gain = (mode < 1);\r\n    lp_gain = slide(lp_gain, smooth_amt, smooth_amt);\r\n    hp_gain = (mode >= 1) && (mode < 2);\r\n    hp_gain = slide(hp_gain, smooth_amt, smooth_amt);\r\n    bp_gain = (mode >= 2) && (mode < 3);\r\n    bp_gain = slide(bp_gain, smooth_amt, smooth_amt);\r\n    notch_gain = (mode >= 3) && (mode < 4);\r\n    notch_gain = slide(notch_gain, smooth_amt, smooth_amt);\r\n    peak_gain = (mode >= 4) && (mode < 5);\r\n    peak_gain = slide(peak_gain, smooth_amt, smooth_amt);\r\n    \r\n    // except while switching modes and slewing, \r\n    // only one filter gain will be on \r\n    left_out = 0.;\r\n    right_out = 0.;\r\n    left_out += left_lp * lp_gain;\r\n    right_out += right_lp * lp_gain;\r\n    left_out += left_hp * hp_gain;\r\n    right_out += right_hp * hp_gain;\r\n    left_out += left_bp * bp_gain;\r\n    right_out += right_bp * bp_gain;\r\n    left_out += left_notch * notch_gain;\r\n    right_out += right_notch * notch_gain;\r\n    left_out += left_peak * peak_gain;\r\n    right_out += right_peak * peak_gain;\r\n\n    return left_out, right_out;\n}\r\n\r\nleft = in1;\r\nright = in2;\r\nfreq = in3;\r\nresonance = in4;\r\nmode = in5;\r\n\r\nleft_out_2p, right_out_2p = svf_tpt_stereo(left, right, freq, resonance, mode);\r\nleft_out_4p, right_out_4p = svf_tpt_stereo(left_out_2p, right_out_2p, freq, resonance, mode);\n\nout1 = left_out_2p;\r\nout2 = right_out_2p;\r\nout3 = left_out_4p;\r\nout4 = right_out_4p;"
+                                                        "code": "\r\n// svf based on public domain algorithm (c) Andrew Simper, Cytomic 2013-2016\r\n// https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf\r\n\r\n\nsvf_tpt_raw_coeff(f, q)\n{\n    // TPT integrator and damping terms\n    // use \"svf_tpt\" prefix to work around gen behavior \n    // where it writes to parent history if name matches\n    svf_tpt_g = tan(pi * f / samplerate);\n    svf_tpt_k = 1 / q;\n    svf_tpt_a1 = 1 / (1 + svf_tpt_g * (svf_tpt_g + svf_tpt_k));\n\n    return svf_tpt_g, svf_tpt_k, svf_tpt_a1;\n}\n\r\nsvf_tpt_raw(x, g, k, a1)\n{\n    History z1(0);\n    History z2(0);\n\n    a2 = g * a1;\n    a3 = g * a2;\n\n    v3 = x - z2;\n    v1 = a1 * z1 + a2 * v3;\n    v2 = z2 + a2 * z1 + a3 * v3;\n\n    z1 = 2 * v1 - z1;\n    z2 = 2 * v2 - z2;\n\n    svf_tpt_lp = v2;\n    svf_tpt_hp = x - (k * v1) - v2;\n    svf_tpt_bp = v1;\n    svf_tpt_notch = svf_tpt_hp + svf_tpt_lp;\n    svf_tpt_peak = svf_tpt_lp - svf_tpt_hp;\r\n    svf_tpt_all = svf_tpt_notch - (k * svf_tpt_bp); // v0 - (2 * k * v1);\n\n    return svf_tpt_lp, svf_tpt_hp, svf_tpt_bp, svf_tpt_notch, svf_tpt_peak, svf_tpt_all;\n}\n\nsvf_tpt_stereo(left, right, freq, resonance, mode)\n{\n    History f(-1);\n    History q(-1);\n    History g(1);\n    History k(1);\n    History a1(1);\n\r\n    // update coefficients if anything changed\n    if (freq != f || resonance != q) {\n        sf = clamp(freq, 1, samplerate * 0.45);\r\n        sq = clamp(resonance, 0.001, 100);\n        if (sf != f || sq != q ) {\n            f = sf;\r\n            q = sq;\r\n            g, k, a1 = svf_tpt_raw_coeff(f, q);\n        }\n    }\n\n    left_lp, left_hp, left_bp, left_notch, left_peak, left_all = svf_tpt_raw(left, g, k, a1);\n    right_lp, right_hp, right_bp, right_notch, right_peak, right_all = svf_tpt_raw(right, g, k, a1);\r\n        \r\n    smooth_amt = 256;\r\n    lp_gain = (mode < 1);\r\n    lp_gain = slide(lp_gain, smooth_amt, smooth_amt);\r\n    hp_gain = (mode >= 1) && (mode < 2);\r\n    hp_gain = slide(hp_gain, smooth_amt, smooth_amt);\r\n    bp_gain = (mode >= 2) && (mode < 3);\r\n    bp_gain = slide(bp_gain, smooth_amt, smooth_amt);\r\n    notch_gain = (mode >= 3) && (mode < 4);\r\n    notch_gain = slide(notch_gain, smooth_amt, smooth_amt);\r\n    peak_gain = (mode >= 4) && (mode < 5);\r\n    peak_gain = slide(peak_gain, smooth_amt, smooth_amt);\r\n    all_gain = (mode >= 5) && (mode < 6);\r\n    all_gain = slide(all_gain, smooth_amt, smooth_amt);\r\n    \r\n    // except while switching modes and slewing, \r\n    // only one filter gain will be on \r\n    left_out = 0.;\r\n    right_out = 0.;\r\n    left_out += left_lp * lp_gain;\r\n    right_out += right_lp * lp_gain;\r\n    left_out += left_hp * hp_gain;\r\n    right_out += right_hp * hp_gain;\r\n    left_out += left_bp * bp_gain;\r\n    right_out += right_bp * bp_gain;\r\n    left_out += left_notch * notch_gain;\r\n    right_out += right_notch * notch_gain;\r\n    left_out += left_peak * peak_gain;\r\n    right_out += right_peak * peak_gain;\r\n    left_out += left_all * all_gain;\r\n    right_out += right_all * all_gain;\r\n\n    return left_out, right_out;\n}\r\n\r\nleft = in1;\r\nright = in2;\r\nfreq = in3;\r\nresonance = in4;\r\nmode = in5;\r\n\r\nleft_out_2p, right_out_2p = svf_tpt_stereo(left, right, freq, resonance, mode);\r\nleft_out_4p, right_out_4p = svf_tpt_stereo(left_out_2p, right_out_2p, freq, resonance, mode);\n\nout1 = left_out_2p;\r\nout2 = right_out_2p;\r\nout3 = left_out_4p;\r\nout4 = right_out_4p;"
                                                     }
                                                 },
                                                 {
@@ -2475,44 +2475,8 @@
                                             "lines": [
                                                 {
                                                     "patchline": {
-                                                        "source": [ "obj-12", 0 ],
-                                                        "destination": [ "obj-3", 4 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-1", 0 ],
-                                                        "destination": [ "obj-3", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-3", 0 ],
-                                                        "destination": [ "obj-4", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-3", 1 ],
-                                                        "destination": [ "obj-8", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-3", 3 ],
-                                                        "destination": [ "obj-9", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-3", 2 ],
-                                                        "destination": [ "obj-10", 0 ]
-                                                    }
-                                                },
-                                                {
-                                                    "patchline": {
-                                                        "source": [ "obj-2", 0 ],
-                                                        "destination": [ "obj-3", 1 ]
+                                                        "source": [ "obj-6", 0 ],
+                                                        "destination": [ "obj-3", 3 ]
                                                     }
                                                 },
                                                 {
@@ -2523,8 +2487,44 @@
                                                 },
                                                 {
                                                     "patchline": {
-                                                        "source": [ "obj-6", 0 ],
-                                                        "destination": [ "obj-3", 3 ]
+                                                        "source": [ "obj-2", 0 ],
+                                                        "destination": [ "obj-3", 1 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-3", 2 ],
+                                                        "destination": [ "obj-10", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-3", 3 ],
+                                                        "destination": [ "obj-9", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-3", 1 ],
+                                                        "destination": [ "obj-8", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-3", 0 ],
+                                                        "destination": [ "obj-4", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-1", 0 ],
+                                                        "destination": [ "obj-3", 0 ]
+                                                    }
+                                                },
+                                                {
+                                                    "patchline": {
+                                                        "source": [ "obj-12", 0 ],
+                                                        "destination": [ "obj-3", 4 ]
                                                     }
                                                 }
                                             ]
@@ -2700,7 +2700,7 @@
                                     "rnbo_extra_attributes": {
                                         "meta": ""
                                     },
-                                    "rnbo_serial": 6,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "out~_obj-4",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -2792,7 +2792,7 @@
                                     "rnbo_extra_attributes": {
                                         "meta": ""
                                     },
-                                    "rnbo_serial": 5,
+                                    "rnbo_serial": 2,
                                     "rnbo_uniqueid": "out~_obj-3",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -3246,7 +3246,7 @@
                         "filtertype": {
                             "label": "filtertype",
                             "isEnum": 1,
-                            "parsestring": "\"lowpass\" \"highpass\" \"bandpass\" \"notch\" \"peak\""
+                            "parsestring": "\"lowpass\" \"highpass\" \"bandpass\" \"notch\" \"peak\" \"allpass\""
                         },
                         "order": {
                             "label": "order",
@@ -3283,13 +3283,13 @@
                                 "value": 1.0
                             },
                             "filtertype": {
-                                "value": 0.0
+                                "value": 5.0
                             },
                             "resonance": {
-                                "value": 0.9480000000000002
+                                "value": 0.2
                             },
                             "frequency": {
-                                "value": 1000.0
+                                "value": 1080.0
                             },
                             "__presetid": "712a1bab-1c12-11f1-9bab-32dee07c2083"
                         },
@@ -3310,13 +3310,13 @@
                                             "value": 1.0
                                         },
                                         "filtertype": {
-                                            "value": 0.0
+                                            "value": 5.0
                                         },
                                         "resonance": {
-                                            "value": 0.9480000000000002
+                                            "value": 0.2
                                         },
                                         "frequency": {
-                                            "value": 1000.0
+                                            "value": 1080.0
                                         },
                                         "__presetid": "712a1bab-1c12-11f1-9bab-32dee07c2083"
                                     },
