@@ -14,7 +14,7 @@ The Max projects contained in this repository do not need to be installed in any
 
 ## Examples
 
-- [ez101](/ez101): A CZ101-inspired synthesizer. Includes custom drawing when running on the Ableton Move.
+- [ez101](/ez101): A CZ101-inspired synthesizer. Includes custom drawing when running on the Ableton Move. This patch was made with help from Oli Larkin. You can get the modern version of his [phase distortion synthesizer here](https://www.olilarkin.co.uk/index.php?p=virtualcz).
 - [fm-synth](/fm-synth): A simplistic FM synthesizer. Includes custom drawing when running on the Ableton Move.
 - [granulator3 (Granulator 3)](/granulator3): The Granulator 3 Max for Live device, with custom drawing when running on Ableton Move.
 - [ls-poli (Learning Synths Poli (Mono))](/ls-poli): A monophonic implementation of the Poli synthesizer, as used on [Learning Synths](https://learningsynths.ableton.com/).
