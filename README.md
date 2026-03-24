@@ -25,6 +25,7 @@ The Max projects contained in this repository do not need to be installed in any
 - [progression-generator](/progression-generator): a chord progression generator with custom drawing when running on Ableton Move.
 - [record-player](/record-player): a cute example of spritesheet-based custom graphics when running on Ableton Move
 - [screensaver](/screensaver): a creative DVD screensaver inspired sequencer
+- [sketchyetcher](/sketchyetcher): a simple interactive drawing example
 - [tuned-stepper](/tuned-stepper): a two-field step sequencer designed to run on Move, which can be tuned to a particular set of MIDI notes
 - [utils](/utils): RNBO implementations of audio effects and utilities
 - [wave-simulation](/wave-simulation): a 2D surface wave simulator, synthesizing MIDI notes. Designed to run on Ableton Move.
