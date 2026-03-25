@@ -18,8 +18,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 95.0, 90.0, 183.0, 47.0 ],
-                    "presentation_linecount": 3,
+                    "patching_rect": [ 95.0, 90.0, 186.0, 47.0 ],
                     "text": "This version is a reusable utility - you need to patch audio in from another node"
                 }
             },
@@ -60,9 +59,9 @@
                             "modernui": 1
                         },
                         "classnamespace": "rnbo",
-                        "rect": [ 1248.0, 611.0, 636.0, 566.0 ],
+                        "rect": [ 1248.0, 611.0, 351.0, 210.0 ],
                         "default_fontname": "Lato",
-                        "title": "spectroscope_utility",
+                        "title": "spectroscope",
                         "boxes": [
                             {
                                 "box": {
@@ -71,12 +70,8 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "signal" ],
-                                    "patching_rect": [ 264.5, 363.0, 35.0, 23.0 ],
+                                    "patching_rect": [ 244.0, 75.0, 35.0, 23.0 ],
                                     "rnbo_classname": "in~",
-                                    "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
-                                    },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "in~_obj-3",
                                     "rnboinfo": {
@@ -164,12 +159,8 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "signal" ],
-                                    "patching_rect": [ 209.5, 363.0, 35.0, 23.0 ],
+                                    "patching_rect": [ 189.0, 75.0, 35.0, 23.0 ],
                                     "rnbo_classname": "in~",
-                                    "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
-                                    },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "in~_obj-2",
                                     "rnboinfo": {
@@ -256,7 +247,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 66.0, 336.0, 112.0, 21.0 ],
+                                    "patching_rect": [ 46.0, 48.0, 112.0, 21.0 ],
                                     "text": "2 x frame rate"
                                 }
                             },
@@ -267,11 +258,8 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 67.0, 363.0, 111.0, 23.0 ],
+                                    "patching_rect": [ 47.0, 75.0, 111.0, 23.0 ],
                                     "rnbo_classname": "metro",
-                                    "rnbo_extra_attributes": {
-                                        "lock": 0.0
-                                    },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "metro_obj-21",
                                     "text": "metro 11 @active 1"
@@ -283,19 +271,9 @@
                                     "maxclass": "newobj",
                                     "numinlets": 3,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 154.5, 425.0, 129.0, 23.0 ],
+                                    "patching_rect": [ 134.0, 137.0, 129.0, 23.0 ],
                                     "rnbo_classname": "p",
-                                    "rnbo_extra_attributes": {
-                                        "polyphony": -1.0,
-                                        "exposevoiceparams": 0,
-                                        "notecontroller": 0,
-                                        "receivemode": "local",
-                                        "args": [],
-                                        "voicecontrol": "simple",
-                                        "uidstyle": "auto",
-                                        "drawstyle": 0.0
-                                    },
-                                    "rnbo_serial": 2,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "spectrodrawing",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -383,6 +361,19 @@
                                                 "touched": 0,
                                                 "type": "number",
                                                 "defaultValue": "-1"
+                                            },
+                                            "exposeparams": {
+                                                "attrOrProp": 2,
+                                                "digest": "Expose contained parameters.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "defaultValue": "true"
                                             },
                                             "exposevoiceparams": {
                                                 "attrOrProp": 2,
@@ -524,8 +515,10 @@
                                         "aliasOf": "rnbo",
                                         "classname": "p",
                                         "operator": 0,
-                                        "versionId": 426236520,
-                                        "changesPatcherIO": 0
+                                        "versionId": -600135020,
+                                        "objectversion": 0,
+                                        "changesPatcherIO": 0,
+                                        "hasPatcherArgs": 0
                                     },
                                     "text": "p @file spectrodrawing",
                                     "varname": "spectrodrawing"
@@ -553,20 +546,22 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 96.0, 142.0, 182.0, 22.0 ],
+                    "patching_rect": [ 96.0, 142.0, 148.0, 22.0 ],
                     "rnboattrcache": {
                         "spectrodrawing/drawstyle": {
                             "label": "drawstyle",
                             "isEnum": 1,
-                            "parsestring": "\"full\" \"mirrory\" \"mirrorx\""
+                            "parsestring": "\"full\" \"mirrory\" \"mirrorx\"",
+                            "type": 1
                         },
                         "spectrodrawing/fftmap/freq_scale": {
                             "label": "freq_scale",
                             "isEnum": 1,
-                            "parsestring": "\"lin\" \"pow\" \"log\""
+                            "parsestring": "\"lin\" \"pow\" \"log\"",
+                            "type": 1
                         }
                     },
-                    "rnboversion": "1.4.3",
+                    "rnboversion": "1.5.0-dev.97",
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_invisible": 1,
@@ -605,7 +600,7 @@
                                     }
                                 }
                             },
-                            "__presetid": "spectroscope_utility"
+                            "__presetid": "spectroscope"
                         },
                         "snapshotlist": {
                             "current_snapshot": 0,
@@ -615,7 +610,7 @@
                                     "version": 2,
                                     "minorversion": 0,
                                     "name": "spectroscope",
-                                    "origin": "spectroscope_utility",
+                                    "origin": "spectroscope",
                                     "type": "rnbo",
                                     "subtype": "",
                                     "embed": 1,
@@ -634,20 +629,20 @@
                                                 }
                                             }
                                         },
-                                        "__presetid": "spectroscope_utility"
+                                        "__presetid": "spectroscope"
                                     },
                                     "fileref": {
                                         "name": "spectroscope",
-                                        "filename": "spectroscope_20260325_1.maxsnap",
+                                        "filename": "spectroscope_20260326.maxsnap",
                                         "filepath": "Package:/rnbo.runner.content/spectroscope/data",
                                         "filepos": -1,
-                                        "snapshotfileid": "79ae0f8267bef58841779fe44050e2d2"
+                                        "snapshotfileid": "8eb5fca8efb7a2c9ca123b900bb69fd8"
                                     }
                                 }
                             ]
                         }
                     },
-                    "text": "rnbo~ @title spectroscope_utility",
+                    "text": "rnbo~ @title spectroscope",
                     "varname": "rnbo~[1]"
                 }
             },
@@ -728,40 +723,26 @@
                                     "outlettype": [ "", "" ],
                                     "patching_rect": [ 328.0, 178.0, 182.0, 23.0 ],
                                     "rnbo_classname": "param",
-                                    "rnbo_extra_attributes": {
-                                        "sendinit": 1,
-                                        "steps": 0.0,
-                                        "enum": "",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "meta": "",
-                                        "tonormalized": "",
-                                        "unit": "",
-                                        "displayname": "",
-                                        "exponent": 1.0,
-                                        "fromnormalized": "",
-                                        "order": "0",
-                                        "ctlin": -1.0
-                                    },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "rate",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
                                         "argnames": {
                                             "value": {
-                                                "attrOrProp": 1,
-                                                "digest": "Parameter value",
+                                                "attrOrProp": 2,
+                                                "digest": "Set initial value",
                                                 "defaultarg": 2,
                                                 "isalias": 0,
                                                 "aliases": [],
                                                 "settable": 1,
                                                 "attachable": 0,
-                                                "isparam": 1,
+                                                "isparam": 0,
                                                 "deprecated": 0,
                                                 "touched": 0,
-                                                "inlet": 1,
                                                 "type": "number",
-                                                "defaultValue": "1"
+                                                "defaultValue": "0",
+                                                "label": "Initial Value",
+                                                "displayorder": 3
                                             },
                                             "normalizedvalue": {
                                                 "attrOrProp": 1,
@@ -785,6 +766,17 @@
                                                 "deprecated": 0,
                                                 "touched": 0,
                                                 "type": "bang"
+                                            },
+                                            "setvalue": {
+                                                "attrOrProp": 1,
+                                                "digest": "Set the param value without output through the outlet.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number"
                                             },
                                             "normalized": {
                                                 "attrOrProp": 1,
@@ -1130,8 +1122,10 @@
                                         "aliasOf": "param",
                                         "classname": "param",
                                         "operator": 0,
-                                        "versionId": -1093178486,
-                                        "changesPatcherIO": 0
+                                        "versionId": -1405000768,
+                                        "objectversion": 0,
+                                        "changesPatcherIO": 0,
+                                        "hasPatcherArgs": 0
                                     },
                                     "text": "param rate 1 @min 0.25 @max 2.",
                                     "varname": "rate"
@@ -1160,11 +1154,6 @@
                                     "outlettype": [ "signal", "signal" ],
                                     "patching_rect": [ 328.0, 266.0, 133.0, 23.0 ],
                                     "rnbo_classname": "groove~",
-                                    "rnbo_extra_attributes": {
-                                        "syncmode": "phase",
-                                        "channels": 1.0,
-                                        "synctype": "relative"
-                                    },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "groove~_obj-6",
                                     "rnboinfo": {
@@ -1396,8 +1385,10 @@
                                         "aliasOf": "groove~",
                                         "classname": "groove~",
                                         "operator": 0,
-                                        "versionId": -147380827,
-                                        "changesPatcherIO": 0
+                                        "versionId": -791625629,
+                                        "objectversion": 0,
+                                        "changesPatcherIO": 0,
+                                        "hasPatcherArgs": 0
                                     },
                                     "text": "groove~ player @loop 1"
                                 }
@@ -1411,13 +1402,6 @@
                                     "outlettype": [ "", "", "" ],
                                     "patching_rect": [ 328.0, 134.0, 163.0, 23.0 ],
                                     "rnbo_classname": "buffer~",
-                                    "rnbo_extra_attributes": {
-                                        "type": "",
-                                        "preset": 0,
-                                        "meta": "",
-                                        "samplerate": 0.0,
-                                        "fill": ""
-                                    },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "buffer~_obj-4",
                                     "rnboinfo": {
@@ -1571,6 +1555,17 @@
                                                 "type": "number",
                                                 "defaultValue": "1"
                                             },
+                                            "datarefhash": {
+                                                "attrOrProp": 1,
+                                                "digest": "datarefhash",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number"
+                                            },
                                             "name": {
                                                 "attrOrProp": 2,
                                                 "digest": "Name of the data buffer",
@@ -1712,8 +1707,10 @@
                                         "aliasOf": "data",
                                         "classname": "buffer~",
                                         "operator": 0,
-                                        "versionId": 405570163,
-                                        "changesPatcherIO": 0
+                                        "versionId": -1343184330,
+                                        "objectversion": 0,
+                                        "changesPatcherIO": 0,
+                                        "hasPatcherArgs": 0
                                     },
                                     "text": "buffer~ player @file jongly.aif"
                                 }
@@ -1726,10 +1723,6 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 387.0, 442.0, 43.0, 23.0 ],
                                     "rnbo_classname": "out~",
-                                    "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
-                                    },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "out~_obj-13",
                                     "rnboinfo": {
@@ -1819,10 +1812,6 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 328.0, 442.0, 43.0, 23.0 ],
                                     "rnbo_classname": "out~",
-                                    "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
-                                    },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "out~_obj-12",
                                     "rnboinfo": {
@@ -1927,10 +1916,6 @@
                                     "outlettype": [ "signal" ],
                                     "patching_rect": [ 256.0, 363.0, 35.0, 23.0 ],
                                     "rnbo_classname": "in~",
-                                    "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
-                                    },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "in~_obj-3",
                                     "rnboinfo": {
@@ -2020,10 +2005,6 @@
                                     "outlettype": [ "signal" ],
                                     "patching_rect": [ 201.0, 363.0, 35.0, 23.0 ],
                                     "rnbo_classname": "in~",
-                                    "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
-                                    },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "in~_obj-2",
                                     "rnboinfo": {
@@ -2123,9 +2104,6 @@
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 67.0, 363.0, 111.0, 23.0 ],
                                     "rnbo_classname": "metro",
-                                    "rnbo_extra_attributes": {
-                                        "lock": 0.0
-                                    },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "metro_obj-21",
                                     "text": "metro 11 @active 1"
@@ -2139,17 +2117,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 146.0, 442.0, 129.0, 23.0 ],
                                     "rnbo_classname": "p",
-                                    "rnbo_extra_attributes": {
-                                        "polyphony": -1.0,
-                                        "exposevoiceparams": 0,
-                                        "notecontroller": 0,
-                                        "receivemode": "local",
-                                        "args": [],
-                                        "voicecontrol": "simple",
-                                        "uidstyle": "auto",
-                                        "drawstyle": 0.0
-                                    },
-                                    "rnbo_serial": 3,
+                                    "rnbo_serial": 1,
                                     "rnbo_uniqueid": "spectrodrawing",
                                     "rnboinfo": {
                                         "needsInstanceInfo": 1,
@@ -2237,6 +2205,19 @@
                                                 "touched": 0,
                                                 "type": "number",
                                                 "defaultValue": "-1"
+                                            },
+                                            "exposeparams": {
+                                                "attrOrProp": 2,
+                                                "digest": "Expose contained parameters.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "defaultValue": "true"
                                             },
                                             "exposevoiceparams": {
                                                 "attrOrProp": 2,
@@ -2378,8 +2359,10 @@
                                         "aliasOf": "rnbo",
                                         "classname": "p",
                                         "operator": 0,
-                                        "versionId": 426236520,
-                                        "changesPatcherIO": 0
+                                        "versionId": -600135020,
+                                        "objectversion": 0,
+                                        "changesPatcherIO": 0,
+                                        "hasPatcherArgs": 0
                                     },
                                     "text": "p @file spectrodrawing",
                                     "varname": "spectrodrawing"
@@ -2464,20 +2447,29 @@
                         "rate": {
                             "label": "rate",
                             "isEnum": 0,
-                            "parsestring": ""
+                            "parsestring": "",
+                            "type": 0
                         },
                         "spectrodrawing/drawstyle": {
                             "label": "drawstyle",
                             "isEnum": 1,
-                            "parsestring": "\"full\" \"mirrory\" \"mirrorx\""
+                            "parsestring": "\"full\" \"mirrory\" \"mirrorx\"",
+                            "type": 1
                         },
                         "spectrodrawing/fftmap/freq_scale": {
                             "label": "freq_scale",
                             "isEnum": 1,
-                            "parsestring": "\"lin\" \"pow\" \"log\""
+                            "parsestring": "\"lin\" \"pow\" \"log\"",
+                            "type": 1
+                        },
+                        "player": {
+                            "label": "dataref",
+                            "isEnum": 0,
+                            "parsestring": "player",
+                            "type": 2
                         }
                     },
-                    "rnboversion": "1.4.3",
+                    "rnboversion": "1.5.0-dev.97",
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_invisible": 1,
