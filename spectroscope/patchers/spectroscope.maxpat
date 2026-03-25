@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 965.0, 417.0, 1000.0, 780.0 ],
+        "rect": [ 667.0, 485.0, 1000.0, 780.0 ],
         "boxes": [
             {
                 "box": {
@@ -61,7 +61,7 @@
                         "classnamespace": "rnbo",
                         "rect": [ 1248.0, 611.0, 351.0, 210.0 ],
                         "default_fontname": "Lato",
-                        "title": "spectroscope",
+                        "title": "Spectroscope",
                         "boxes": [
                             {
                                 "box": {
@@ -546,7 +546,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 96.0, 142.0, 148.0, 22.0 ],
+                    "patching_rect": [ 96.0, 142.0, 150.0, 22.0 ],
                     "rnboattrcache": {
                         "spectrodrawing/drawstyle": {
                             "label": "drawstyle",
@@ -600,7 +600,7 @@
                                     }
                                 }
                             },
-                            "__presetid": "spectroscope"
+                            "__presetid": "Spectroscope"
                         },
                         "snapshotlist": {
                             "current_snapshot": 0,
@@ -610,7 +610,7 @@
                                     "version": 2,
                                     "minorversion": 0,
                                     "name": "spectroscope",
-                                    "origin": "spectroscope",
+                                    "origin": "Spectroscope",
                                     "type": "rnbo",
                                     "subtype": "",
                                     "embed": 1,
@@ -629,20 +629,20 @@
                                                 }
                                             }
                                         },
-                                        "__presetid": "spectroscope"
+                                        "__presetid": "Spectroscope"
                                     },
                                     "fileref": {
                                         "name": "spectroscope",
-                                        "filename": "spectroscope_20260326.maxsnap",
+                                        "filename": "spectroscope_20260326_1.maxsnap",
                                         "filepath": "Package:/rnbo.runner.content/spectroscope/data",
                                         "filepos": -1,
-                                        "snapshotfileid": "8eb5fca8efb7a2c9ca123b900bb69fd8"
+                                        "snapshotfileid": "4b59a0a22667f3c442da14001b1eed5f"
                                     }
                                 }
                             ]
                         }
                     },
-                    "text": "rnbo~ @title spectroscope",
+                    "text": "rnbo~ @title Spectroscope",
                     "varname": "rnbo~[1]"
                 }
             },
@@ -698,7 +698,7 @@
                         "classnamespace": "rnbo",
                         "rect": [ 1248.0, 611.0, 636.0, 566.0 ],
                         "default_fontname": "Lato",
-                        "title": "spectroscope_example",
+                        "title": "Spectroscope Example",
                         "boxes": [
                             {
                                 "box": {
@@ -2442,8 +2442,14 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 435.0, 142.0, 200.0, 22.0 ],
+                    "patching_rect": [ 435.0, 142.0, 209.0, 22.0 ],
                     "rnboattrcache": {
+                        "player": {
+                            "label": "dataref",
+                            "isEnum": 0,
+                            "parsestring": "player",
+                            "type": 2
+                        },
                         "rate": {
                             "label": "rate",
                             "isEnum": 0,
@@ -2461,12 +2467,6 @@
                             "isEnum": 1,
                             "parsestring": "\"lin\" \"pow\" \"log\"",
                             "type": 1
-                        },
-                        "player": {
-                            "label": "dataref",
-                            "isEnum": 0,
-                            "parsestring": "player",
-                            "type": 2
                         }
                     },
                     "rnboversion": "1.5.0-dev.97",
@@ -2511,7 +2511,7 @@
                             "rate": {
                                 "value": 1.0
                             },
-                            "__presetid": "spectroscope_example"
+                            "__presetid": "Spectroscope Example"
                         },
                         "snapshotlist": {
                             "current_snapshot": 0,
@@ -2521,7 +2521,7 @@
                                     "version": 2,
                                     "minorversion": 0,
                                     "name": "spectroscope",
-                                    "origin": "spectroscope_example",
+                                    "origin": "Spectroscope Example",
                                     "type": "rnbo",
                                     "subtype": "",
                                     "embed": 1,
@@ -2543,20 +2543,20 @@
                                         "rate": {
                                             "value": 1.0
                                         },
-                                        "__presetid": "spectroscope_example"
+                                        "__presetid": "Spectroscope Example"
                                     },
                                     "fileref": {
                                         "name": "spectroscope",
-                                        "filename": "spectroscope_20260325.maxsnap",
+                                        "filename": "spectroscope_20260326_3.maxsnap",
                                         "filepath": "Package:/rnbo.runner.content/spectroscope/data",
                                         "filepos": -1,
-                                        "snapshotfileid": "89e4502da77a1a12be9520d30ec07cd9"
+                                        "snapshotfileid": "8a3fcfc65f73275f6e5ecb3c8065266c"
                                     }
                                 }
                             ]
                         }
                     },
-                    "text": "rnbo~ @title spectroscope_example",
+                    "text": "rnbo~ @title \"Spectroscope Example\"",
                     "varname": "rnbo~"
                 }
             },
