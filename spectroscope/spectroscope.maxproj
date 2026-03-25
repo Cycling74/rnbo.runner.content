@@ -2,7 +2,7 @@
     "name": "spectroscope",
     "version": 1,
     "creationdate": 3856847216,
-    "modificationdate": 3856915940,
+    "modificationdate": 3857286578,
     "viewrect": [ 25.0, 106.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -18,8 +18,13 @@
             "fftlist.rnbopat": {
                 "kind": "rnbopat",
                 "local": 1
+            },
+            "spectrodrawing.rnbopat": {
+                "kind": "rnbopat",
+                "local": 1
             }
-        }
+        },
+        "data": {        }
     },
     "layout": {    },
     "searchpath": {    },
